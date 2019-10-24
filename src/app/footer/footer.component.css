@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+img {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.row {
+    border-bottom: 20px black solid;
+}
+
+.line {
+    border-top: 3px solid white;
+}
