@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+div {
+    background-color: black;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+input,
+label,
+a {
+    font-family: Martel Sans;
+    color: white;
+}
+
+a:hover {
+    color: #DAAD29 !important;
+}
