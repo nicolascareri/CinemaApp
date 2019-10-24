@@ -11,7 +11,12 @@ h4,
 h5,
 button,
 input,
-label {
+label,
+a {
     font-family: Martel Sans;
     color: white;
+}
+
+a:hover {
+    color: #DAAD29 !important;
 }
