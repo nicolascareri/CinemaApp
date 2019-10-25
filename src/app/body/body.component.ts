@@ -9,6 +9,12 @@ export class BodyComponent implements OnInit {
 
   constructor() { }
 
+  urls=[
+    "assets/films/dark.jpg",
+    "assets/films/vikings.jpg"
+    
+  ]
+
   ngOnInit() {
   }
 
