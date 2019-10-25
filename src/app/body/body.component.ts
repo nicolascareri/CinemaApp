@@ -11,7 +11,10 @@ export class BodyComponent implements OnInit {
 
   urls=[
     "assets/films/dark.jpg",
-    "assets/films/vikings.jpg"
+    "assets/films/vikings.jpg",
+    "assets/films/Downton.jpg",
+    "assets/films/mindhunter.jpg",
+    "assets/films/peaky.jpg"
     
   ]
 
