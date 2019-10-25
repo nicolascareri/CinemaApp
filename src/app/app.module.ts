@@ -7,6 +7,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BotonComponent } from './boton/boton.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BotonComponent } from './boton/boton.component';
     NavComponent,
     BodyComponent,
     FooterComponent,
-    BotonComponent
+    BotonComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
