@@ -18,3 +18,9 @@ img {
 .line {
     border-top: 3px solid white;
 }
+footer{
+    background-color: black;
+}
+a, p{
+    color: white;
+}
