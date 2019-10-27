@@ -11,6 +11,7 @@ import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { LoginComponent } from './login/login.component';
 import { FlyerComponent } from './body/flyer/flyer.component';
+import { RegistrateComponent } from './login/registrate/registrate.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlyerComponent } from './body/flyer/flyer.component';
     CardComponent,
     CarruselComponent,
     LoginComponent,
-    FlyerComponent
+    FlyerComponent,
+    RegistrateComponent
   ],
   imports: [
     BrowserModule,
