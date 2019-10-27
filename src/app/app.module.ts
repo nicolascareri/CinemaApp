@@ -10,6 +10,7 @@ import { BotonComponent } from './boton/boton.component';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { LoginComponent } from './login/login.component';
+import { FlyerComponent } from './body/flyer/flyer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './login/login.component';
     BotonComponent,
     CardComponent,
     CarruselComponent,
-    LoginComponent
+    LoginComponent,
+    FlyerComponent
   ],
   imports: [
     BrowserModule,

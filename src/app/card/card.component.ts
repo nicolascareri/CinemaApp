@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() url: string;
+  @Input() urls: string;
+  @Input() terminar:boolean;
   constructor() { }
 
   ngOnInit() {

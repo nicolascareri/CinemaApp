@@ -1,6 +1,6 @@
-<div class="carrusel">
-    <div *ngFor="let url of urls" class="cards">
-        <app-card [url]="url"> </app-card>
+<div class="carrusel" *ngFor="let rows of carruseles">
+    <p>{{rows.titulo}}</p>
+    <div *ngFor="let url of rows.urls" class="cards">
+        <app-card [urls]="url" [terminar]="rows.seguirviendo"> </app-card>
     </div>
-
 </div>
