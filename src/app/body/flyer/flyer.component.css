@@ -7,3 +7,19 @@ img {
     height: 600px;
     width: 100%;
 }
+
+.reproducir {
+    left: 52px;
+}
+
+.añadir {
+    left: 282px;
+}
+
+.añadir,
+.reproducir {
+    position: absolute;
+    width: 15%;
+    height: 60px;
+    top: 397px;
+}

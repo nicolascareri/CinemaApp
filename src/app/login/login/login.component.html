@@ -7,18 +7,14 @@
             <h3 class="titulo">Iniciar Sesion</h3>
             <div class="form-group" class="input">
                 <label for="username" class="label">Email</label>
-                <br>
                 <input type="text" name="username" id="username" aria-placeholder="" placeholder="jorgep@gmail.com" class="form-control">
             </div>
             <div class="form-group" class="input">
                 <label for="password" class="label">Contraseña</label>
-                <br>
                 <input type="password" name="password" id="password" aria-placeholder="" placeholder="**********" class="form-control">
             </div>
             <div class="form-group">
-                <br>
-                <button [routerLink]="['/inicio']"><span>Iniciar Sesion</span></button>
-                <br>
+                <button [routerLink]="['/inicio']" class="btn"><span>Iniciar Sesion</span></button>
             </div>
         </form>
     </div>

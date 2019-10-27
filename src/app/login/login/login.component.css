@@ -19,9 +19,11 @@ form {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input {
+input,
+button.btn {
     height: 50px;
     width: 100%;
+    padding: 0;
 }
 
 #login-box {
@@ -60,3 +62,9 @@ div.col-10 form.form,
 div.row.d-flex.regist {
     margin: 20px 0 !important;
 }
+
+
+/* 
+.btn {
+    width: 100%;
+} */
