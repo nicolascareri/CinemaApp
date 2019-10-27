@@ -10,6 +10,12 @@
     top: 397px;
 }
 
+.añadir,
+.reproducir {
+    width: 199px;
+    height: 60px;
+}
+
 .navv {
     position: relative;
     z-index: 1;
