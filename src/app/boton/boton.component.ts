@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BotonComponent implements OnInit {
   @Input()  txt:string;
+  @Input() style:string;
   constructor() { }
 
   ngOnInit() {

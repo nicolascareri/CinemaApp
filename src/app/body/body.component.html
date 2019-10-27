@@ -3,9 +3,8 @@
 </div>
 <div class="col-12 flyerr">
     <app-flyer class="flyer"></app-flyer>
-    <app-boton [txt]="'REPRODUCIR'" class="reproducir"></app-boton>
-    <app-boton [txt]="'AÑADIR'" class="añadir"></app-boton>
+    <app-boton [style]="'button'" [txt]="'REPRODUCIR'" class="reproducir"></app-boton>
+    <app-boton [style]="'button'" [txt]="'AÑADIR'" class="añadir"></app-boton>
     <router-outlet></router-outlet>
+    <app-carrusel></app-carrusel>
 </div>
-
-<app-carrusel></app-carrusel>

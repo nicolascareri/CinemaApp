@@ -18,7 +18,7 @@
 }
 
 .flyerr {
-    transform: translate(0, -70px);
+    transform: translate(0, -70px) !important;
     z-index: 0;
     margin: 0;
     padding: 0;
