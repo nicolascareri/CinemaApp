@@ -1,0 +1,9 @@
+.carro {
+    position: relative;
+}
+
+img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}

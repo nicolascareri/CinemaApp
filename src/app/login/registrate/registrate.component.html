@@ -1,0 +1,33 @@
+<div class="row d-flex justify-content-center">
+    <img src="../assets/logo.png" class="img-fluid logo" alt="">
+</div>
+<div class="row justify-content-center align-items-center">
+    <div class="col-10 col-lg-4" id="login-box">
+        <form id="login-form" class="form">
+            <h3 class="titulo">Iniciar Sesion</h3>
+            <div class="form-group" class="input">
+                <label for="username" class="label">Email</label>
+                <br>
+                <input type="text" name="username" id="username" aria-placeholder="" placeholder="jorgep@gmail.com" class="form-control">
+            </div>
+            <div class="form-group" class="input">
+                <label for="password" class="label">Contraseña</label>
+                <br>
+                <input type="password" name="password" id="password" aria-placeholder="" placeholder="**********" class="form-control">
+            </div>
+            <div class="form-group">
+                <br>
+                <app-boton id="boton" [style]="'input'" [routerLink]="['/inicio']" [txt]="'Iniciar Sesion'"></app-boton>
+                <br>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row d-flex justify-content-center regist">
+    <ul class="register">
+        <li>¿Eres nuevo en Cinema?</li>
+        <li>
+            <a [routerLink]="['/Registrate']" class="">Registrate ahora</a>
+        </li>
+    </ul>
+</div>
