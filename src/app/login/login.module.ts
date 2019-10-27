@@ -12,9 +12,8 @@ import { BotonComponent } from '../boton/boton.component';
   declarations: [
   PlanComponent,
   LoginComponent,
-  PagoComponent,
-  RegistrateComponent
-],
+  PagoComponent,  
+  RegistrateComponent],
   imports: [
     CommonModule,
     LoginRoutingModule,
