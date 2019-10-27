@@ -1,21 +1,3 @@
-.reproducir {
-    position: absolute;
-    left: 52px;
-    top: 397px;
-}
-
-.añadir {
-    position: absolute;
-    left: 282px;
-    top: 397px;
-}
-
-.añadir,
-.reproducir {
-    width: 199px;
-    height: 60px;
-}
-
 .navv {
     position: relative;
     z-index: 1;
