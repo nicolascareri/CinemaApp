@@ -11,6 +11,7 @@ export class BotonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

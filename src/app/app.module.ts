@@ -9,12 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { BotonComponent } from './boton/boton.component';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
-import { LoginComponent } from './login/login.component';
+import { aLoginComponent } from "./login/login.component";
 import { FlyerComponent } from './body/flyer/flyer.component';
-import { RegistrateComponent } from './login/registrate/registrate.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
+    aLoginComponent,
     AppComponent,
     NavComponent,
     BodyComponent,
@@ -22,13 +23,12 @@ import { RegistrateComponent } from './login/registrate/registrate.component';
     BotonComponent,
     CardComponent,
     CarruselComponent,
-    LoginComponent,
     FlyerComponent,
-    RegistrateComponent
   ],
   imports: [
+    LoginModule,
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
