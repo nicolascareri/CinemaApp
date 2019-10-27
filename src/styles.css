@@ -1,20 +1,9 @@
-div {
-    background-color: black;
+body, html, .body{
+    height: 100%;
 }
-
-p,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-button,
-input,
-label,
-a {
-    font-family: Martel Sans;
-    color: white;
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
 }
 
 a:hover {
