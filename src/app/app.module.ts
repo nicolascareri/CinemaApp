@@ -8,21 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { aLoginComponent } from "./login/login.component";
-import { FlyerComponent } from './body/flyer/flyer.component';
 import { LoginModule } from './login/login.module';
-
+import { BodyModule } from './body/body.module';
+import { NavComponent } from './body/nav/nav.component';
 @NgModule({
   declarations: [
     aLoginComponent,
     AppComponent,
     BodyComponent,
     FooterComponent,
-    CardComponent,
-    CarruselComponent,
-    FlyerComponent,
+    NavComponent,
+    
   ],
   imports: [
     LoginModule,
+    BodyModule,
     AppRoutingModule,
     BrowserModule,
   ],

@@ -1,15 +1,10 @@
+* {
+    padding: 0;
+}
+
 .navv {
     position: relative;
     z-index: 1;
     background: rgba(0, 0, 0, .5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.flyerr {
-    transform: translate(0, -70px) !important;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    ;
 }
