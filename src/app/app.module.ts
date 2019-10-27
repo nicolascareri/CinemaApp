@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BotonComponent } from './boton/boton.component';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
-import { aLoginComponent } from './login/login.component';
+import { aLoginComponent } from "./login/login.component";
 import { FlyerComponent } from './body/flyer/flyer.component';
 import { LoginModule } from './login/login.module';
 

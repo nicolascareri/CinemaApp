@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrateComponent } from './registrate/registrate.component';
 import { PlanComponent } from './plan/plan.component';
 import { PagoComponent } from './pago/pago.component';
-import { aLoginComponent } from './login.component';
+import { aLoginComponent } from "./login.component";
 
 
 const rout: Routes = [
