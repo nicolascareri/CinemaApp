@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BotonComponent } from './boton/boton.component';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarruselComponent } from './carrusel/carrusel.component';
     FooterComponent,
     BotonComponent,
     CardComponent,
-    CarruselComponent
+    CarruselComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
