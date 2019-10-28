@@ -1,37 +1,38 @@
 * {
     margin: 0;
 }
-
+h3.titulo{
+    font-weight: 700;
+}
 form {
     font-weight: 650;
+    
 }
 
 .logo {
     height: 140px;
     margin-top: 1%;
 }
-
-.card-gris {
-    position: absolute;
-    width: 459px;
-    height: 407px;
-    background: rgb(39, 31, 31);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+div.input{
+    margin-top: 20px;
 }
 
 input,
 button.btn {
     height: 50px;
+}
+button{
     width: 100%;
-    padding: 0;
 }
 
 #login-box {
+    padding: 50px;
+    padding-top: 20px;
     height: 380px;
     border: 1px solid #9C9C9C;
     background-color: #dddddd;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .label,
@@ -63,8 +64,3 @@ div.row.d-flex.regist {
     margin: 20px 0 !important;
 }
 
-
-/* 
-.btn {
-    width: 100%;
-} */
