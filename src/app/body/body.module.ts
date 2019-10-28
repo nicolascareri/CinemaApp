@@ -17,10 +17,14 @@ import { CardComponent } from '../card/card.component';
     PeliculasComponent,
     CarruselComponent,
     CardComponent, 
+    NavComponent
   ],
   imports: [
     CommonModule,
     BodyRoutingModule,
+  ],
+  exports:[
+    NavComponent
   ]
 })
 export class BodyModule { }

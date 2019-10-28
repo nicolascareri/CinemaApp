@@ -17,8 +17,6 @@ import { NavComponent } from './body/nav/nav.component';
     AppComponent,
     BodyComponent,
     FooterComponent,
-    NavComponent,
-    
   ],
   imports: [
     LoginModule,
