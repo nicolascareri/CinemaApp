@@ -4,7 +4,7 @@
             </button>
     <a class="logo" [routerLink]="['/inicio']"><img class="logo  d-flex justify-self-center" src="assets/logo.png" alt=""></a>
 
-    <div class="collapse navbar-collapse nav" id="navbarTogglerDemo03">
+    <div class="collapse navbar-collapse nav" id="navbarTogglerDemo03" *ngIf="logeado">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link d-flex align-self-center" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
@@ -21,4 +21,5 @@
         </ul>
 
     </div>
+    <a href="" *ngIf="!logeado">Iniciar Sesion</a>
 </nav>
