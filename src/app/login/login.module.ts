@@ -7,6 +7,8 @@ import { PlanComponent } from './plan/plan.component';
 import { LoginComponent } from './login/login.component';
 import { PagoComponent } from './pago/pago.component';
 import { CardPlanComponent } from './plan/card-plan/card-plan.component';
+import { NavComponent } from '../body/nav/nav.component';
+import { BodyModule } from '../body/body.module';
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { CardPlanComponent } from './plan/card-plan/card-plan.component';
   PagoComponent,  
   RegistrateComponent, CardPlanComponent],
   imports: [
+    BodyModule,
     CommonModule,
     LoginRoutingModule,
   ]
