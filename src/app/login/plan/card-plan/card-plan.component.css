@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+}
+
+.first {
+    margin-top: 45px;
+}
+
+.seg {
+    margin-top: 37px;
+    color: black;
+}
+
+.cardd {
+    width: 242.22px;
+    height: 347.35px;
+    background: #DDDDDD;
+    color: black;
+}
+
+.titulo {
+    margin: 15px 0 0 0;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid black;
+    z-index: 3;
+}
+
+h3,
+div p {
+    color: black;
+}
