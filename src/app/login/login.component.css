@@ -9,3 +9,8 @@
      background-repeat: no-repeat;
      background-size: cover;
  }
+ 
+ .back {
+     background: linear-gradient(180deg, rgba(56, 15, 114, .8) 0%, rgba(0, 0, 0, 0.8) 50.66%);
+     width: 100%;
+ }
