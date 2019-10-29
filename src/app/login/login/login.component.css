@@ -20,6 +20,7 @@ div.input{
 input,
 button.btn {
     height: 50px;
+    border-radius: 0px;
 }
 button{
     width: 100%;
@@ -46,6 +47,7 @@ h3.titulo {
 
 .input {
     margin: 10px 0;
+
 }
 
 ul li {
