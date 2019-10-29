@@ -10,7 +10,9 @@ img {
     width: 29px;
     margin: 5% 10%;
 }
-
+a{
+    font-size: 15px;
+}
 .row {
     border-bottom: 20px black solid;
 }
