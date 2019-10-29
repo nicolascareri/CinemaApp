@@ -10,7 +10,7 @@
 }
 
 p {
-    font-size: 26px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -36,4 +36,13 @@ p {
  ::-webkit-scrollbar-thumb {
     background: #ECBE3B;
     border-radius: 5px;
+}
+
+@media(max-width: 1000px) {
+    p {
+        font-size: 14px;
+    }
+    div.carrusel {
+        margin: 0 0 0 5px;
+    }
 }
