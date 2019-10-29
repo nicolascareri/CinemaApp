@@ -11,9 +11,7 @@
         <a class="logo" [routerLink]="['/inicio']">
             <img class="logo  d-flex justify-self-center" src="assets/logo.png" alt=""></a>
 
-            <div
-                class="collapse navbar-collapse nav"
-                id="navbarTogglerDemo03">
+            <div class="collapse navbar-collapse nav" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 " *ngIf="logeado">
                     <li class="nav-item active">
                         <a class="nav-link d-flex align-self-center" [routerLink]="['/inicio']">Inicio
@@ -23,22 +21,57 @@
                     <li class="nav-item active">
                         <a
                             class="nav-link d-flex align-self-center"
-                            [routerLink]="['/inicio/peliculas']">Peliculas<span class="sr-only">(current)</span>
+                            [routerLink]="['/inicio/peliculas']">Peliculas<span class="sr-only"></span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link d-flex align-self-center" [routerLink]="['/inicio/series']">Series
-                            <span class="sr-only">(current)</span>
+                            <span class="sr-only"></span>
                         </a>
                     </li>
-                    <li class="nav-item active lista">
+                    <li class="nav-item  lista">
                         <a class="nav-link  d-flex align-self-center lista" [routerLink]="['/milista']">Mi lista
-                            <span class="sr-only">(current)</span>
+                            <span class="sr-only"></span>
                         </a>
                     </li>
                 </ul>
-                <li class="nav-item text-right">
-                    <a [routerLink]="['/login']" *ngIf="!logeado">Iniciar Sesion</a>
+                <ul class="navbar-nav ml-auto"  *ngIf="!logeado" >
+                        <li class="nav-item" id="iniciarsesion">
+                            <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+        
+                <li class="nav-item"*ngIf="logeado" >
+                    <a href="#">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.1662 25.795C15.3614 25.5997 15.3614 25.2831 15.1662 25.0879C14.9709 24.8926 14.6543 24.8926 14.4591 25.0879L15.1662 25.795ZM4.04784 36.2062L3.69429 36.5597C3.78806 36.6535 3.91524 36.7062 4.04784 36.7062C4.18045 36.7062 4.30763 36.6535 4.4014 36.5597L4.04784 36.2062ZM0.648438 32.8068L0.294884 32.4532C0.099622 32.6485 0.099622 32.9651 0.294884 33.1603L0.648438 32.8068ZM11.7668 22.3956C11.962 22.2003 11.962 21.8837 11.7668 21.6884C11.5715 21.4932 11.2549 21.4932 11.0597 21.6884L11.7668 22.3956ZM31.5979 22.6801C26.7085 27.5696 18.7811 27.5696 13.8916 22.6801L13.1845 23.3872C18.4645 28.6672 27.025 28.6672 32.305 23.3872L31.5979 22.6801ZM13.8916 22.6801C9.00212 17.7906 9.00212 9.86322 13.8916 4.97374L13.1845 4.26664C7.90448 9.54663 7.90448 18.1072 13.1845 23.3872L13.8916 22.6801ZM13.8916 4.97374C18.7811 0.0842724 26.7085 0.0842724 31.5979 4.97374L32.305 4.26664C27.025 -1.01336 18.4645 -1.01336 13.1845 4.26664L13.8916 4.97374ZM31.5979 4.97374C36.4874 9.86322 36.4874 17.7906 31.5979 22.6801L32.305 23.3872C37.585 18.1072 37.585 9.54663 32.305 4.26664L31.5979 4.97374ZM17.2909 8.37296C20.303 5.36093 25.1864 5.36093 28.1985 8.37296L28.9056 7.66586C25.503 4.2633 19.9864 4.2633 16.5838 7.66586L17.2909 8.37296ZM14.4591 25.0879L3.69429 35.8526L4.4014 36.5597L15.1662 25.795L14.4591 25.0879ZM4.4014 35.8526L1.00199 32.4532L0.294884 33.1603L3.69429 36.5597L4.4014 35.8526ZM1.00199 33.1603L11.7668 22.3956L11.0597 21.6884L0.294884 32.4532L1.00199 33.1603ZM2.63185 30.8241L6.03125 34.2235L6.73836 33.5164L3.33896 30.117L2.63185 30.8241Z" fill="#F6D04F"/>
+                            </svg>
+                    </a>
                 </li>
-            </div>
-        </nav>
+                <li class="nav-item dropdown"*ngIf="logeado">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >
+                        <img
+                            src="assets/accountimage.jpeg"
+                            width="40"
+                            height="40"
+                            class="rounded-circle userimg"></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header">Nicolás Martín Careri</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Mi Cuenta</a>
+                            <a class="dropdown-item" href="#">Notificaciones</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                        </div>
+                    </li>
+                    <!-- <div> <img class="img-fluid userimg d-flex justify-self-center"
+                    src="assets/accountimage.jpeg" alt=""> </div> -->
+                </div>
+            </nav>

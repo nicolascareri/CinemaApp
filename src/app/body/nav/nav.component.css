@@ -4,19 +4,33 @@ nav {
     font-size: 16px;
     line-height: 29px;
 }
-
+.dropdown-menu{
+    background: rgba(0, 0, 0, 0.7);
+}
+.dropdown-item, .dropdown-header{
+    color: white;
+}
 .logo {
     margin: 0 3% 0 0;
     height: 49px;
     width: 107px;
 }
-
-li {
+.userimg{
+    max-width: 100px;
+    max-height: 50px;
+    border: 2px solid #DAAD29;
+    border-radius: 30px;
+}
+ul li {
     /* min-width: 150px; */
     margin: 0 5%;
     font-family: Martel Sans;
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+#iniciarsesion a{
+    color: #EFC23E;
+    width: 200px;
 }
 
 .lista {
