@@ -1,54 +1,54 @@
-            .carro {
-                position: relative;
-            }
-            
-            img {
-                position: relative;
-                height: 600px;
-                width: 100%;
-            }
-            
-            .reproducir {
-                left: 52px;
-            }
-            
-            .añadir {
-                left: 382px;
-            }
-            
-            .flyerr {
-                transform: translate(0, -70px) !important;
-                z-index: 0;
-                margin: 0;
-                padding: 0;
-                border: 0;
-            }
-            
-            .añadir,
-            .reproducir {
-                position: absolute;
-                width: 19%;
-                height: 60px;
-                top: 397px;
-            }
-            
-            @media (max-width: 1000px) {
-                .añadir,
-                .reproducir {
-                    position: absolute;
-                    width: 45%;
-                    height: 60px;
-                    top: 197px;
-                }
-                .reproducir {
-                    left: 10px;
-                }
-                .añadir {
-                    left: 50%;
-                }
-                img {
-                    position: relative;
-                    height: 300px;
-                    width: 100%;
-                }
-            }
+.carro {
+    position: relative;
+}
+
+img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.reproducir {
+    left: 52px;
+}
+
+.añadir {
+    left: 382px;
+}
+
+.flyerr {
+    transform: translate(0, -70px) !important;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.añadir,
+.reproducir {
+    position: absolute;
+    width: 19%;
+    height: 60px;
+    top: 397px;
+}
+
+@media (max-width: 1000px) {
+    .añadir,
+    .reproducir {
+        position: absolute;
+        width: 45%;
+        height: 60px;
+        top: 197px;
+    }
+    .reproducir {
+        left: 10px;
+    }
+    .añadir {
+        left: 50%;
+    }
+    img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+}
