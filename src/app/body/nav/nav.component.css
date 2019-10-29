@@ -21,12 +21,16 @@ nav {
     border: 2px solid #DAAD29;
     border-radius: 30px;
 }
-li {
+ul li {
     /* min-width: 150px; */
     margin: 0 5%;
     font-family: Martel Sans;
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+#iniciarsesion a{
+    color: #EFC23E;
+    width: 200px;
 }
 
 .lista {
