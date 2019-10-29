@@ -11,9 +11,7 @@
         <a class="logo" [routerLink]="['/inicio']">
             <img class="logo  d-flex justify-self-center" src="assets/logo.png" alt=""></a>
 
-            <div
-                class="collapse navbar-collapse nav"
-                id="navbarTogglerDemo03">
+            <div class="collapse navbar-collapse nav" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 " *ngIf="logeado">
                     <li class="nav-item active">
                         <a class="nav-link d-flex align-self-center" [routerLink]="['/inicio']">Inicio
@@ -40,5 +38,30 @@
                 <li class="nav-item text-right">
                     <a [routerLink]="['/login']" *ngIf="!logeado">Iniciar Sesion</a>
                 </li>
-            </div>
-        </nav>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >
+                        <img
+                            src="assets/accountimage.jpeg"
+                            width="40"
+                            height="40"
+                            class="rounded-circle userimg"></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header">Nicolás Martín Careri</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Mi Cuenta</a>
+                            <a class="dropdown-item" href="#">Notificaciones</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                        </div>
+                    </li>
+                    <!-- <div> <img class="img-fluid userimg d-flex justify-self-center"
+                    src="assets/accountimage.jpeg" alt=""> </div> -->
+                </div>
+            </nav>
