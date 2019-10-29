@@ -1,7 +1,11 @@
-html,
-body {
-    background-color: black;
+html {
+    background: black;
     z-index: -1000;
+}
+
+body {
+    background: linear-gradient(180deg, #380F72 0%, #000000 50.66%);
+    z-index: -999;
 }
 
 button {

@@ -1,10 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    opacity: 1;
 }
-.group-cards{
+
+.group-cards {
     margin-top: 40px;
 }
+
 .cards {
     display: inline-block;
     margin: 0 20px;
