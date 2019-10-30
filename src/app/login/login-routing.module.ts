@@ -10,7 +10,7 @@ import { aLoginComponent } from "./login.component";
 const rout: Routes = [
   { path: 'login', component: aLoginComponent, children: [
      {path: '', component: LoginComponent},
-    {path: 'Registrate', component:RegistrateComponent},
+    {path: 'registrate', component:RegistrateComponent},
     {path: 'plan', component: PlanComponent},
     {path: 'pago', component: PagoComponent},
     {path: '**', component: RegistrateComponent},
