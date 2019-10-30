@@ -1,6 +1,6 @@
 #registrarte-box {
     padding-top: 20px !important    ;
-    padding: 125px;
+    padding: 160px;
     height: 970px;
     border: 1px solid #9C9C9C;
     background-color: #dddddd;
@@ -18,9 +18,11 @@ div.col-10 form.form,
 div.row.d-flex.regist {
     margin: 20px 0 !important;
 }
+
 h3{
     border-bottom: 1px solid black;
 }
+
 .label,
 h3.subtitulo {
     color: black;
@@ -34,7 +36,7 @@ h3.subtitulo {
 }
 
 .subtitulo2{
-    padding-top: 30px !important    ;
+    padding-top: 30px !important;
 }
 
 .subtitulo {
@@ -46,8 +48,6 @@ h3.subtitulo {
     margin: 10px 0;
 }
 
-
-
 div.input{
     margin-top: 15px;
 }
@@ -55,7 +55,10 @@ div.input{
 input,
 button.btn {
     height: 65px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
 }
-button{
+button.btn{
     width: 100%;
+    margin-top:15px;
 }
