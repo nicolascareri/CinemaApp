@@ -140,18 +140,30 @@ bottom: 25.29%;
 }
 @media screen and (max-width: 1000px) {
 
+    .descripcion{
+        left: -10px;
+        top: 0px;
+    }
     .añadir,
     .reproducir {
         position: absolute;
-        width: 45%;
-        height: 60px;
-        top: 197px;
+        width: 127px;
+        height: 32px;
+        top: 500px;
+        font-size: 14px;
     }
-    .reproducir {
-        left: 10px;
+    .descripcion h1{
+        top: 100px;
+        font-size: 20px;
     }
-    .añadir {
-        left: 50%;
+    .descripcion h2{
+        font-size: 20px;
+        top: 140px;
+    }
+    .descripcion p{
+        font-size: 14px;
+        top: 200px;
+        width: 60%;
     }
     .img-container{
         background-image: url("/assets/fondoPB.jpeg");
