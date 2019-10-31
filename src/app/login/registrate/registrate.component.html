@@ -1,5 +1,5 @@
 <app-nav></app-nav>
-<div class="row justify-content-center align-items-center">
+<div class="row justify-content-center align-items-center contenedor">
     <div class="col-10 col-lg-6" id="registrarte-box">
         <form id="login-form" class="form align-items-center justify-content-center">
             <h3 class="subtitulo"> Datos personales</h3>
@@ -16,26 +16,26 @@
             <h3 class="subtitulo subtitulo2"> Datos de la cuenta</h3>
             <div class="form-group" class="input">
                 <label for="username" class="label">Email de la cuenta</label>
-                <input type="text" name="username" id="username" aria-placeholder="" placeholder="Email de la cuenta"
+                <input type="text" name="username" id="email" aria-placeholder="" placeholder="Email de la cuenta"
                     class="form-control">
             </div>
             <div class="form-group" class="input">
                 <label for="username" class="label">Confirmar email</label>
-                <input type="text" name="username" id="username" aria-placeholder="" placeholder="Confirmar email"
+                <input type="text" name="username" id="cemail" aria-placeholder="" placeholder="Confirmar email"
                     class="form-control">
             </div>
             <div class="form-group" class="input">
                 <label for="username" class="label">Contraseña(7 o mas caracteres)</label>
-                <input type="password" name="username" id="username" aria-placeholder="" placeholder="Contraseña"
+                <input type="password" name="username" id="pw" aria-placeholder="" placeholder="Contraseña"
                     class="form-control">
             </div>
             <div class="form-group" class="input">
                 <label for="username" class="label">Confirmar contraseña</label>
-                <input type="password" name="username" id="username" aria-placeholder=""
+                <input type="password" name="username" id="cpw" aria-placeholder=""
                     placeholder="Confirmar contraseña" class="form-control">
             </div>
             <div class="form-group" class="input">
-                <button [routerLink]="['/inicio']" class="btn" click="emit()"><span>Continuar</span></button>
+                <button [routerLink]="['/login']" class="btn" click="emit()"><span>Continuar</span></button>
             </div>
         </form>
     </div>

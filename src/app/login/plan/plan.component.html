@@ -1,6 +1,22 @@
 <app-nav [logeado]="logeado"></app-nav>
-<div class="row d-flex justify-content-center">
-    <div class="col-6 col-lg-2 d-flex justify-content-center cards" *ngFor="let card of planes">
-        <app-card-plan class="cards" [plan]="card.titulo" [descargas]="card.descargas" [pantallas]="card.pantallas" [precio]="card.precio"></app-card-plan>
+<div class="row d-flex justify-content-center cont">
+    <span class="subtitulo">Elegir plan</span>
+    <div class="breadcumb">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.90909" cy="8.90909" r="8.90909" fill="#EFC53E" />
+        </svg>
+        <svg  width="135" height="6" viewBox="0 0 150 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.181641" y="0.36377" width="148.909" height="5.09091" fill="#DDDDDD" />
+        </svg>
+        <svg class="circle" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9.09098" cy="8.90909" r="8.90909" fill="#DDDDDD" />
+        </svg>
+        <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.95000" cy="8.90909" r="8.90909" fill="#DDDDDD" />
+        </svg>
+    </div>
+    <div class="col-6 col-lg-2 d-flex text-center justify-content-center cards" *ngFor="let card of planes">
+        <app-card-plan class="cards" [plan]="card.titulo" [descargas]="card.descargas" [pantallas]="card.pantallas"
+            [precio]="card.precio"></app-card-plan>
     </div>
 </div>
