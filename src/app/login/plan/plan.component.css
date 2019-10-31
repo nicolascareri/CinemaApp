@@ -4,11 +4,37 @@
     opacity: 1;
 }
 
-.group-cards {
-    margin-top: 40px;
+.cont {
+    margin-top: 250px;
+}
+
+.subtitulo { 
+    margin-bottom: 10px;
+    font-size: 1.75rem;
+    font-weight: normal;
+    position: absolute;
+    top:150px;
 }
 
 .cards {
     display: inline-block;
     margin: 0 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .cards{
+        padding-top: 0px;
+        padding: 10px;
+    }
+}
+
+.circle{
+    position: absolute;
+    left: 77px;
+    top: 6px;
+}
+.breadcumb{
+    position: absolute;
+    top: 225px;
+}
+
