@@ -5,12 +5,12 @@
     border: 1px solid rgb(253, 165, 165);
     background-color: #dddddd;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 60px;
+    margin-top: 200px;
 }
 @media only screen and (max-width: 600px) {
     #registrarte-box{
         padding-top: 0px;
-        padding: 50px;
+        padding: 25px;
     }
 }
 
@@ -49,6 +49,11 @@ h3.subtitulo {
     font-size: 26px;
 }
 
+h2.subtitulo{ 
+    position: absolute;
+    top: 125px ;
+}
+
 .input {
     margin: 10px 0;
 }
@@ -67,4 +72,15 @@ button.btn {
 button.btn{
     width: 100%;
     margin-top:15px;
+}
+
+.circle{
+    position: absolute;
+    left: 77px;
+    top: 6px;
+}
+
+.breadcumb{
+    position: absolute;
+    top: 205px;
 }
