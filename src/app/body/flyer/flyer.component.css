@@ -2,99 +2,96 @@
     position: relative;
     height: 100%;
 }
-#añadir{
+
+#añadir {
     left: 35%;
 }
-span{
+
+span {
     position: absolute;
     left: 30%;
     right: 5.17%;
     top: 14.71%;
     bottom: 10.29%;
     text-align: center;
-
-/* content */
-
-font-family: Martel Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* content */
+    font-family: Martel Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-h1, h2, p{
+
+h1,
+h2,
+p {
     font-family: Martel Sans;
     font-style: normal;
     display: flex;
     align-items: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5) !important;
-    stroke: black;
+    text-shadow: 1px 1px 1px black, -1px -2px 2px black, 5px 5px 5px black;
 }
-.descripcion h1{
+
+.descripcion h1 {
     position: absolute;
-width: 370px;
-height: 46px;
-left: 51px;
-top: 20px;
-
-/* titulos */
-
-
-font-weight: bold;
-font-size: 30px;
-line-height: 55px;
-color: #E9E9E9;
-
+    width: 370px;
+    height: 46px;
+    left: 51px;
+    top: 20px;
+    /* titulos */
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 55px;
+    color: #E9E9E9;
 }
-.descripcion h2{
+
+.descripcion h2 {
     position: absolute;
     width: 390px;
     height: 81px;
     left: 51px;
     top: 100px;
-    
     /* subtitulo */
-    
-
     font-weight: normal;
     font-size: 26px;
     line-height: 47px;
     color: #E9E9E9;
 }
-.descripcion p{
+
+.descripcion p {
     position: absolute;
     width: 511px;
     height: 111px;
     left: 51px;
     top: 140px;
-
     /* content */
-
+    line-height: 29px;
     font-weight: normal;
     font-size: 16px;
-    line-height: 29px;
     color: #E9E9E9;
 }
-.descripcion{
+
+.descripcion {
     position: relative;
     width: 579px;
     height: 338px;
     left: 51px;
     top: 127px;
 }
-.img-container{
+
+.img-container {
     background-image: url("/assets/fondoPB.jpeg");
     height: 655px;
     background-position-y: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .flyerr {
     transform: translate(0, -70px) !important;
     z-index: 0;
@@ -103,59 +100,102 @@ color: #E9E9E9;
     border: 0;
     height: 100%;
 }
-.añadir, .reproducir{
+
+.añadir,
+.reproducir {
     top: 300px;
 }
-.añadir{
+
+.añadir {
     position: absolute;
     width: 271px;
     height: 68px;
     left: 328px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.reproducir{
+
+.reproducir {
     position: absolute;
     width: 271px;
     height: 68px;
     left: 51px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-h1, h2, p, .reproducir{
+
+h1,
+h2,
+p,
+.reproducir {
     left: 20px !important;
 }
-.playicon{
-    position: absolute;
-left: 5.9%;
-right: 78.97%;
-top: 20.59%;
-bottom: 19.12%;
-}
-.listicon{
-    position: absolute;
-left: 8.86%;
-right: 73.8%;
-top: 26.47%;
-bottom: 25.29%;
 
+.playicon {
+    position: absolute;
+    left: 5.9%;
+    right: 78.97%;
+    top: 20.59%;
+    bottom: 19.12%;
 }
-@media screen and (max-width: 1000px) {
 
+.listicon {
+    position: absolute;
+    left: 8.86%;
+    right: 73.8%;
+    top: 26.47%;
+    bottom: 25.29%;
+}
+
+@media screen and (max-width: 600px) {
+    .descripcion {
+        left: -10px;
+        top: 0px;
+        width: auto;
+    }
     .añadir,
     .reproducir {
         position: absolute;
-        width: 45%;
-        height: 60px;
-        top: 197px;
-    }
-    .reproducir {
-        left: 10px;
+        width: 127px;
+        height: 32px;
+        top: 320px;
+        font-size: 14px;
     }
     .añadir {
-        left: 50%;
+        left: 180px;
     }
-    .img-container{
+    #añadir,
+    #reproducir {
+        font-size: 14px;
+    }
+    #reproducir {
+        left: 27px;
+    }
+    button svg.listicon {
+        width: 35px;
+        height: 21px;
+    }
+    button svg.playicon {
+        width: 19px;
+        height: 19px;
+    }
+    .descripcion h1 {
+        width: auto;
+        top: 100px;
+        font-size: 20px;
+    }
+    .descripcion h2 {
+        width: auto;
+        font-size: 20px;
+        top: 140px;
+    }
+    .descripcion p {
+        font-size: 14px;
+        line-height: 20px;
+        top: 180px;
+        width: 72%;
+    }
+    .img-container {
         background-image: url("/assets/fondoPB.jpeg");
-        height: 655px;
+        height: 400px;
         background-position-x: center;
         background-repeat: no-repeat;
         background-size: cover;
