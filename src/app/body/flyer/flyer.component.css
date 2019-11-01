@@ -145,7 +145,7 @@ p,
     bottom: 25.29%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     .descripcion {
         left: -10px;
         top: 0px;
