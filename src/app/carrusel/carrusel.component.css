@@ -5,6 +5,7 @@
 .carrusel {
     position: relative;
     overflow-x: scroll;
+    overflow: hidden;
     white-space: pre;
     margin: 0 0 30px 54px
 }
@@ -45,4 +46,17 @@ p {
     div.carrusel {
         margin: 0 0 0 5px;
     }
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.div {
+    display: inline;
+}
+
+.rojo {
+    color: red !important;
 }
