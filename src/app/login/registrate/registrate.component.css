@@ -1,40 +1,47 @@
 #registrarte-box {
     padding-top: 20px !important    ;
-    padding: 125px;
+    padding: 130px;
     height: 970px;
-    border: 1px solid #9C9C9C;
+    border: 1px solid rgb(253, 165, 165);
     background-color: #dddddd;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 60px;
+    margin-top: 200px;
 }
 @media only screen and (max-width: 600px) {
     #registrarte-box{
         padding-top: 0px;
-        padding: 50px;
+        padding: 25px;
     }
+}
+
+
+.contenedor {
+    margin: 0 0;
 }
 
 div.col-10 form.form,
 div.row.d-flex.regist {
     margin: 20px 0 !important;
 }
+
 h3{
     border-bottom: 1px solid black;
 }
+
 .label,
 h3.subtitulo {
     color: black;
     
 }
 
-.label{
+.label {
     font-weight: bold;
     font-size: 16px;
     line-height: 29px;
 }
 
 .subtitulo2{
-    padding-top: 30px !important    ;
+    padding-top: 30px !important;
 }
 
 .subtitulo {
@@ -42,11 +49,14 @@ h3.subtitulo {
     font-size: 26px;
 }
 
+h2.subtitulo{ 
+    position: absolute;
+    top: 125px ;
+}
+
 .input {
     margin: 10px 0;
 }
-
-
 
 div.input{
     margin-top: 15px;
@@ -55,7 +65,22 @@ div.input{
 input,
 button.btn {
     height: 65px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
 }
-button{
+
+button.btn{
     width: 100%;
+    margin-top:15px;
+}
+
+.circle{
+    position: absolute;
+    left: 77px;
+    top: 6px;
+}
+
+.breadcumb{
+    position: absolute;
+    top: 205px;
 }
