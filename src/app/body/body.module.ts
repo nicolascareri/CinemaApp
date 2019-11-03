@@ -8,6 +8,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { NavComponent } from './nav/nav.component';
 import { CarruselComponent } from '../carrusel/carrusel.component';
 import { CardComponent } from '../card/card.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CardComponent } from '../card/card.component';
   imports: [
     CommonModule,
     BodyRoutingModule,
+    CarouselModule.forRoot(),
   ],
   exports:[
     NavComponent
