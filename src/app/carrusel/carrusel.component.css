@@ -48,6 +48,10 @@ p {
     }
 }
 
+ol.carousel-indicators {
+    transform: translate(+210px);
+}
+
 img {
     height: 200px;
     width: 200px;
@@ -55,8 +59,4 @@ img {
 
 .div {
     display: inline;
-}
-
-.rojo {
-    color: red !important;
 }
