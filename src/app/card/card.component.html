@@ -1,5 +1,7 @@
 <div class="card">
-    <img src={{urls}} alt="">
-    <div class="visto" *ngIf="terminar"></div>
-    <div class="novisto" *ngIf="terminar"></div>
+    <div class="row"><img src={{urls}} alt=""></div>
+    <div class="row">
+        <div class="visto d-flex align-self-start justify-content-start" *ngIf="terminar"></div>
+        <div class="novisto d-flex align-self-end justify-content-start" *ngIf="terminar"></div>
+    </div>
 </div>

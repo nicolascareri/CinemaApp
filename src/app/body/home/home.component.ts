@@ -19,17 +19,15 @@ export class HomeComponent implements OnInit {
           "assets/films/dark.jpg",
           "assets/films/mindhunter.jpg",
         ],[
-          
           "assets/films/vikings.jpg",
-          "assets/films/Downton.jpg",
-          "assets/films/Downton.jpg",
-          "assets/films/Downton.jpg",
+          "assets/films/vikings.jpg",
+          "assets/films/vikings.jpg",
+          "assets/films/mindhunter.jpg",
         ],[
+          "assets/films/Downton.jpg",
+          "assets/films/Downton.jpg",
+          "assets/films/Downton.jpg",
           "assets/films/mindhunter.jpg",
-          "assets/films/vikings.jpg",
-
-          "assets/films/mindhunter.jpg",
-          "assets/films/vikings.jpg"
         ]
       ],
       seguirviendo:true

@@ -13,19 +13,19 @@ img {
 
 .visto,
 .novisto {
-    display: inline-block;
+    display: block;
     position: absolute;
     z-index: 3;
 }
 
 .visto {
-    border-bottom: 3px solid #ECBE3B;
+    border-top: 3px solid #ECBE3B;
+    border-bottom: 20% solid black;
     width: 40%;
-    transform: translate(0, 145px);
 }
 
 .novisto {
-    border-bottom: 3px solid #8f6800;
+    border-top: 3px solid #8f6800;
+    border-bottom: 20% solid black;
     width: 60%;
-    transform: translate(99px, 145px);
 }
