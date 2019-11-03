@@ -22,6 +22,13 @@ button {
     height: 347.35px;
     background: #DDDDDD;
     color: black;
+    margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardd{
+        padding: 5px;
+    }
 }
 
 .titulo {
