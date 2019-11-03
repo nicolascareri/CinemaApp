@@ -4,23 +4,57 @@ nav {
     font-size: 16px;
     line-height: 29px;
 }
-.dropdown-menu{
+
+.closebtn {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav li a:hover {
+    color: #f1f1f1;
+}
+
+.menuicon {
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown-menu {
     background: rgba(0, 0, 0, 0.7);
 }
-.dropdown-item, .dropdown-header{
+
+.dropdown-item,
+.dropdown-header {
     color: white;
 }
+
 .logo {
     margin: 0 3% 0 0;
     height: 49px;
     width: 107px;
 }
-.userimg{
+
+.userimg {
     max-width: 100px;
     max-height: 50px;
     border: 2px solid #DAAD29;
     border-radius: 30px;
 }
+
+.search {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+
+.userdropdown {
+    left: 10px;
+}
+
 ul li {
     /* min-width: 150px; */
     margin: 0 5%;
@@ -28,7 +62,8 @@ ul li {
     font-style: normal;
     /* font-weight: bold; */
 }
-#iniciarsesion a{
+
+#iniciarsesion a {
     color: #EFC23E;
     width: 200px;
 }
@@ -40,4 +75,59 @@ ul li {
 .row {
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .menuicon {
+        visibility: visible;
+        background: none !important;
+    }
+    .closebtn {
+        visibility: visible;
+    }
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 200px;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background: rgba(0, 0, 0, 0.85);
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+    }
+    .logo {
+        margin-left: 25%;
+    }
+    li.userdropdown {
+        left: 0px;
+        position: absolute;
+        top: 0px !important;
+    }
+    .userimg {
+        max-width: 122px;
+        max-height: 150px;
+        height: 122px;
+        width: 122px;
+    }
+    .search {
+        top: 17px;
+        right: 20px;
+    }
+    .content {
+        margin-top: 80px !important;
+    }
+    .inicio {
+        visibility: hidden;
+    }
 }
