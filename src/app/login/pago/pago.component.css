@@ -116,10 +116,10 @@ button.btn {
 }
 
 button.btn{
-    width: 31vh;
+    width: 35vh;
     margin-top:15px;
     position: absolute;
-    right:130px;
+    right:100px;
 }
 
 a.texto-cancelar{
