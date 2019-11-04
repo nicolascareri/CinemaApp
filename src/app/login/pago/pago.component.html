@@ -1,1 +1,59 @@
-<p>pago works!</p>
+<app-nav [logeado]="logeado"></app-nav>
+<div class="row d-flex justify-content-center contenedor">
+    <h2 class="subtitulo">Pago</h2>
+    <div class="breadcumb">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.90909" cy="8.90909" r="8.90909" fill="#EFC53E" />
+        </svg>
+        <svg  width="135" height="6" viewBox="0 0 150 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.181641" y="0.36377" width="148.909" height="5.09091" fill="#DDDDDD" />
+        </svg>
+        <svg class="circle" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9.09098" cy="8.90909" r="8.90909" fill="#DDDDDD" />
+        </svg>
+        <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.95000" cy="8.90909" r="8.90909" fill="#DDDDDD" />
+        </svg>
+    </div>
+    <div class="col-10 col-lg-6" id="pago-box">
+        <p class="texto-intro">Nicolas, ¡Estas a punto de ser un nuevo socio Diamante!</p>
+        <svg width="73" height="60" viewBox="0 0 73 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="73" height="60" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="scale(0.00684932 0.00833333)"/>
+            </pattern>
+            <image id="image0" width="146" height="120" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>
+            
+        <form id="pago-form" class="form align-items-center justify-content-center">
+            <div class="form-group" class="input">
+                <label for="username" class="label">Nombre y Apellido del titular</label>
+                <input type="text" aria-placeholder="" placeholder="Nombre y Apellido"
+                    class="form-control">
+            </div>
+            <div class="form-group" class="input">
+                <label for="password" class="label">Numero de tarjeta</label>
+                <input type="text" aria-placeholder="" placeholder="0000 0000 0000 0000"
+                    class="form-control">
+            </div>
+            <div class="form-row">
+                <div class="vencimiento form-group align-items-center col-auto input">
+                    <label for="username" class="label">Fecha de vencimiento</label>
+                    <input type="text" aria-placeholder="" placeholder="MM/YYYY"
+                        class="form-control">
+                </div>
+                <div class="codseguridad form-group align-items-center col-auto input" >
+                    <label for="username" class="label ">Codigo de seguridad</label>
+                    <input type="text" aria-placeholder="" placeholder="000"
+                        class="form-control">
+                </div>
+            </div>
+            <div class="form-group input">
+                <a [routerLink]="['/login/']" class="texto-cancelar" >Cancelar</a>
+                <button [routerLink]="['/inicio']" class="btn" click="emit()"><span>Suscribirse</span></button>
+            </div>
+        </form>
+    </div>
+</div>
