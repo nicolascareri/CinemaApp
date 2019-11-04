@@ -1,46 +1,14 @@
 * {
     padding: 0;
-}
-
-.cards {
-    display: inline-block;
-}
-
-.carousel {
-    margin-left: -50px !important;
-}
-
-.carrusel {
-    position: relative;
-    overflow-x: scroll;
-    overflow: hidden;
-    white-space: pre;
-    margin: 0 0 200px 54px
+    margin: 0 !important;
 }
 
 h2 {
     font-size: 16px;
     margin: 0;
-    margin-left: 84px;
     font-family: Martel Sans;
     font-style: normal;
-    display: flex;
-    align-items: center;
     text-shadow: 1px 1px 1px black, -1px -2px 2px black, 5px 5px 5px black;
-}
-
-.scroll {
-    /* scroll-behavior: smooth; */
-    /* overflow-x: hidden; */
-    width: 100%;
-    overflow-x: scroll;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-.films {
-    display: inline-block;
-    width: 15%;
 }
 
 @media(max-width: 1000px) {
@@ -49,9 +17,5 @@ h2 {
     }
     div.carrusel {
         margin: 0 0 0 5px;
-    }
-    .slides {
-        overflow-x: scroll;
-        scroll-margin-left: 50%;
     }
 }
