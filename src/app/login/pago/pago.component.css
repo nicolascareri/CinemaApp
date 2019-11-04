@@ -1,0 +1,150 @@
+#pago-box {
+    padding-top: 20px !important    ;
+    padding: 100px;
+    height: 625px;
+    background-color: #dddddd;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 200px;
+    top:50px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+    #pago-box{
+        padding-top: 0px;
+        padding: 25px;
+        top:25px;
+        height:800px;
+    }
+    .codseguridad{
+        width:100% !important;
+    }
+    .vencimiento{
+        width:100% !important;
+    }
+    button.btn{
+        width: 50% !important;
+        margin:0 auto;
+        margin-top: 25px !important;
+        left: 25%;
+    }
+    a.texto-cancelar{
+        bottom: 15px !important;
+        margin: 0 auto;
+        left:45% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    a.texto-cancelar{
+    left:40% !important;
+    }
+}
+
+.logo-visa{
+    padding-right: 15px;
+}
+
+.logo-master{
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.logo-aexpres{
+    padding-left: 15px;
+}
+
+.codseguridad{
+    width:50%;
+}
+
+.vencimiento{
+    width: 50%;
+}
+
+div.form-group.input{
+    margin-top: 0px;
+}
+
+.contenedor {
+    margin: 0 0;
+}
+
+h3{
+    border-bottom: 1px solid black;
+}
+
+.label,
+h3.subtitulo {
+    color: black;
+    
+}
+
+.label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.subtitulo2{
+    padding-top: 30px !important;
+}
+
+.subtitulo {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+h2.subtitulo{ 
+    position: absolute;
+    top: 150px ;
+}
+
+.input {
+    margin: 10px 0;
+}
+
+div.input{
+    margin-top: 15px;
+}
+
+input,
+button.btn {
+    height: 65px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+}
+
+button.btn{
+    width: 31vh;
+    margin-top:15px;
+    position: absolute;
+    right:130px;
+}
+
+a.texto-cancelar{
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    bottom:55px;
+    left: 135px;
+    text-decoration: underline;
+}
+
+p.texto-intro{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.circle{
+    position: absolute;
+    left: 77px;
+    top: 6px;
+}
+
+.breadcumb{
+    position: absolute;
+    top: 205px;
+}

@@ -1,4 +1,4 @@
-<p>{{carrusel.titulo}}</p>
+<h2>{{carrusel.titulo}}</h2>
 <carousel [itemsPerSlide]="1" [singleSlideOffset]="false" [noWrap]="!noWrap" [interval]="false" [startFromIndex]="5" (slideRangeChange)="onSlideRangeChange($event)">
     <slide *ngFor="let slide of carrusel.urls">
         <div class="row d-flex justify-content-center">
