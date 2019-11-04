@@ -148,7 +148,7 @@ ul li {
     } */
 }
 
-@media (min-width: 1200px) and (max-width:1600px){
+@media (min-width: 1200px) and (max-width:2000px){
     #iniciarsesion a{
         position: absolute;
         left:90% !important;
