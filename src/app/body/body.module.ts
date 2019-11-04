@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { CarruselComponent } from '../carrusel/carrusel.component';
 import { CardComponent } from '../card/card.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { InfoComponent } from './info/info.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     PeliculasComponent,
     CarruselComponent,
     CardComponent, 
-    NavComponent
+    NavComponent, 
+    InfoComponent
   ],
   imports: [
     CommonModule,
