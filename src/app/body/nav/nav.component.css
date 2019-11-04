@@ -109,6 +109,10 @@ ul li {
     .logo {
         margin-left: 25%;
     }
+    .logo-out{
+        margin: 0 !important;
+        left:10px;
+    }
     li.userdropdown {
         left: 0px;
         position: absolute;
