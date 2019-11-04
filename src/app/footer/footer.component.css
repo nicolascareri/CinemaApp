@@ -32,10 +32,11 @@ p {
     font-size: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .linea1{
         margin: 5px;
         top:20px;
+        padding-bottom: 5px;
     }
     .linea2 {
         margin: 5px;
