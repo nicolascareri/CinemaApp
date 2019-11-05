@@ -29,5 +29,12 @@ export class NavComponent implements OnInit {
       menu.style.display = "block";
     }
   }
-
+  openSearch() {
+    let div = document.getElementById("myOverlay") as HTMLElement;
+    div.style.display = "block";
+  }
+  closeSearch() {
+    let div = document.getElementById("myOverlay") as HTMLElement;
+    div.style.display = "none";
+  }
 }
