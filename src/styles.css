@@ -16,6 +16,14 @@ button {
     z-index: 999;
 }
 
+.no-indicators .carousel-indicators {
+    display: none;
+}
+
+.no-indicators .carousel-control{
+    width: 10%;
+}
+
 button span {
     color: black !important;
 }

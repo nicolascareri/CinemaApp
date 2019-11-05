@@ -4,19 +4,19 @@
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 26px;
     margin: 0;
     font-family: Martel Sans;
     font-style: normal;
     text-shadow: 1px 1px 1px black, -1px -2px 2px black, 5px 5px 5px black;
+    padding-bottom: 0.5%;
 }
 
 @media(max-width: 1000px) {
     h2 {
-        margin-left: 0px;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -29,5 +29,5 @@ h2 {
 }
 
 h2#h2 {
-    margin: 0 0 0 2.2% !important;
+    margin-left: 1% !important;
 }
