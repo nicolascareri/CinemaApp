@@ -1,56 +1,14 @@
 * {
     padding: 0;
-}
-
-.cards {
-    display: inline-block;
-}
-
-.carousel {
-    margin-left: -50px !important;
-}
-
-.carrusel {
-    position: relative;
-    overflow-x: scroll;
-    overflow: hidden;
-    white-space: pre;
-    margin: 0 0 200px 54px
+    margin: 0 !important;
 }
 
 h2 {
     font-size: 16px;
     margin: 0;
-    margin-left: 84px;
     font-family: Martel Sans;
     font-style: normal;
-    display: flex;
-    align-items: center;
     text-shadow: 1px 1px 1px black, -1px -2px 2px black, 5px 5px 5px black;
-}
-
-
-/* width */
-
-::-webkit-scrollbar {
-    width: 20px;
-    height: 10px !important;
-}
-
-
-/* Track */
-
- ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 5px;
-}
-
-
-/* Handle */
-
- ::-webkit-scrollbar-thumb {
-    background: #ECBE3B;
-    border-radius: 5px;
 }
 
 @media(max-width: 1000px) {
@@ -62,15 +20,6 @@ h2 {
     }
 }
 
-ol.carousel-indicators {
-    transform: translate(+210px);
-}
-
-img {
-    height: 200px;
-    width: 200px;
-}
-
-.div {
-    display: inline;
+h2#h2 {
+    margin: 0 0 0 2.2% !important;
 }
