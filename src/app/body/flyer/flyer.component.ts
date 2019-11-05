@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-flyer',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flyer.component.css']
 })
 export class FlyerComponent implements OnInit {
-
+  @Input() info;
   constructor() { }
 
   ngOnInit() {
