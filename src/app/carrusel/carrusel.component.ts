@@ -7,6 +7,7 @@ import { Component, OnInit,  Input  } from '@angular/core';
 export class CarruselComponent implements OnInit {
   constructor() { }
   @Input() carrusel: {};
+  @Input() car: {};
 
   public ngOnInit(){
   }
