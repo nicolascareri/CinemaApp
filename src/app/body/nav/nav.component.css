@@ -92,6 +92,96 @@ ul li {
     width: 100%;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 16%;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closesearch {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closesearch:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+.overlay svg:hover,
+.search {
+    cursor: pointer;
+}
+
+.overlay-content svg {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    width: 50px;
+    height: 50px;
+}
+
+.filtros {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    margin-left: -260px !important;
+    list-style: none;
+    text-align: center;
+}
+
+.filtros li {
+    color: white;
+    display: inline-block;
+    background-color: rgb(90, 90, 90);
+    padding: 10px 15px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.peliculas {
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.peliculas li {
+    display: inline-block;
+    width: 268px;
+    height: 150px;
+}
+
 @media (max-width: 600px) {
     .footernav {
         display: block;
@@ -126,7 +216,7 @@ ul li {
         top: 0;
         /* Stay at the top */
         left: 0;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.9);
         /* Black*/
         overflow-x: hidden;
         /* Disable horizontal scroll */
