@@ -9,6 +9,9 @@ export class FlyerComponent implements OnInit {
 
   constructor() { }
 
+  reproducir(){
+    alert("olis");
+  }
   ngOnInit() {
   }
 

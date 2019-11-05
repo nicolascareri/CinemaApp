@@ -138,7 +138,6 @@ p,
 }
 
 .listicon {
-    position: absolute;
     left: 8.86%;
     right: 73.8%;
     top: 26.47%;
@@ -200,4 +199,10 @@ p,
         background-repeat: no-repeat;
         background-size: cover;
     }
+}
+
+.video,
+.listicon,
+.playicon {
+    position: absolute;
 }
