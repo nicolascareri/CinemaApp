@@ -42,6 +42,11 @@ nav {
     width: 107px;
 }
 
+ul.navbar-nav.ml-auto.text-right{
+    margin-left: 0 !important;
+}
+
+
 .userimg {
     max-width: 100px;
     max-height: 50px;
@@ -69,7 +74,9 @@ ul li {
 
 #iniciarsesion a {
     color: #EFC23E;
-    width: 200px;
+    width: 120px;
+    height: 50px;
+    float: right !important; 
 }
 
 .lista {
@@ -192,5 +199,21 @@ ul li {
     }
     li a svg.svgnav {
         display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:2000px){
+    #iniciarsesion a{
+        position: absolute;
+        left:90% !important;
+        top:15px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    #iniciarsesion a{
+        position: absolute;
+        left:85% !important;
+        top:15px;
     }
 }
