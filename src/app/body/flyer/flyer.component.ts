@@ -9,10 +9,12 @@ export class FlyerComponent implements OnInit {
 
   constructor() { }
 
-  reproducir(){
-    alert("olis");
+  toggleVideo(){
+    let video = document.getElementById("video") as HTMLElement;
+    video.style.height = "100%";
   }
-  ngOnInit() {
+  public ngOnInit(){
+    
   }
 
 }

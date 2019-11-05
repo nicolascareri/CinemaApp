@@ -10,5 +10,6 @@ export class CarruselComponent implements OnInit {
   @Input() car: {};
 
   public ngOnInit(){
+  
   }
 }
