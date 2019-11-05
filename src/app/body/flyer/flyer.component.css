@@ -114,12 +114,47 @@ p {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.logos{
+    position:absolute;
+    top:250px;
+    left:35px;
+}
+
+.logo{
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top:10px;
+}
+
 .reproducir {
     position: absolute;
     width: 271px;
     height: 68px;
     left: 51px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-logo1,
+.texto-logo2,
+.texto-logo3 {
+    font-size:16px;
+    color:white;
+    position: absolute;
+    top:60px;
+    left: 35px;
+}
+
+.texto-logo2{
+    margin-left:125px;
+}
+
+.texto-logo3{
+    margin-left:250px;
+}
+
+button.reproducir.reproducir-info{
+    top:350px;
+    left: 100px !important;
 }
 
 h1,

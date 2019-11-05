@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+  informacion = true;
 
   constructor() { }
   carruseles =[
@@ -18,14 +20,14 @@ export class HomeComponent implements OnInit {
           "assets/films/mindhunter.jpg",
           "assets/films/Downton.jpg",
         ],[
-          "assets/films/mindhunter.jpg",
-          "assets/films/vikings.jpg",
-          "assets/films/dark.jpg",
-          "assets/films/Downton.jpg",
+          "assets/films/avengers.png",
+          "assets/films/aladin.jpg",
+          "assets/films/alita.jpg",
+          "assets/films/skyfall.jpg",
         ],[
-          "assets/films/dark.jpg",
-          "assets/films/vikings.jpg",
-          "assets/films/Downton.jpg",
+          "assets/films/war.jpg",
+          "assets/films/toystory.jpg",
+          "assets/films/joker.jpg",
           "assets/films/mindhunter.jpg",
         ]
       ],

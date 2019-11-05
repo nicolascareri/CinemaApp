@@ -5,6 +5,15 @@ nav {
     line-height: 29px;
 }
 
+.icon,
+.footernav {
+    display: none;
+}
+
+.userinfo {
+    display: none;
+}
+
 .closebtn {
     visibility: hidden;
     position: absolute;
@@ -38,6 +47,10 @@ nav {
     width: 107px;
 }
 
+ul.navbar-nav.ml-auto.text-right {
+    margin-left: 0 !important;
+}
+
 .userimg {
     max-width: 100px;
     max-height: 50px;
@@ -65,7 +78,9 @@ ul li {
 
 #iniciarsesion a {
     color: #EFC23E;
-    width: 200px;
+    width: 120px;
+    height: 50px;
+    float: right !important;
 }
 
 .lista {
@@ -78,6 +93,20 @@ ul li {
 }
 
 @media (max-width: 600px) {
+    .footernav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 550px;
+    }
+    .icon {
+        display: block;
+        margin-left: -9px !important;
+    }
+    #listaicon {
+        margin-right: 11px !important;
+    }
     .menuicon {
         visibility: visible;
         background: none !important;
@@ -109,9 +138,9 @@ ul li {
     .logo {
         margin-left: 25%;
     }
-    .logo-out{
+    .logo-out {
         margin: 0 !important;
-        left:10px;
+        left: 10px;
     }
     li.userdropdown {
         left: 0px;
@@ -129,9 +158,79 @@ ul li {
         right: 20px;
     }
     .content {
-        margin-top: 80px !important;
+        margin-left: 20px;
+        margin-top: 85px !important;
     }
     .inicio {
         visibility: hidden;
+    }
+    #dropdownmenu h6 {
+        position: absolute;
+        top: -160px;
+        left: -5px;
+    }
+    #dropdownmenu {
+        display: none;
+        position: absolute;
+        top: 300px;
+        border-bottom: 1px solid white;
+    }
+    .userinfo ul li {
+        width: 150px;
+        height: 30;
+        list-style: none;
+    }
+    li svg {
+        margin-left: -60px;
+        margin-right: 19px !important;
+    }
+    li svg.notificacion {
+        margin-right: 14px !important;
+    }
+    h6 {
+        top: -180px;
+        width: 100%;
+        border-bottom: 1px solid;
+        position: absolute;
+        /* content */
+        font-family: Martel Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    .userinfo {
+        top: 330px;
+        left: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 90%;
+        position: absolute;
+        display: block;
+        border-top: 1px solid white;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .userinfo a {
+        margin-top: 5px;
+    }
+    li a svg.svgnav {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:2000px) {
+    #iniciarsesion a {
+        position: absolute;
+        left: 90% !important;
+        top: 15px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #iniciarsesion a {
+        position: absolute;
+        left: 85% !important;
+        top: 15px;
     }
 }
