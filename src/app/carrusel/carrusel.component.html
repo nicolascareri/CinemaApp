@@ -1,9 +1,13 @@
-<h2>{{carrusel.titulo}}</h2>
+<div class="row d-flex justify-content-center">
+    <div class="col-11">
+        <h2 id="h2">{{carrusel.titulo}}</h2>
+    </div>
+</div>
 <carousel [itemsPerSlide]="1" [singleSlideOffset]="false" [noWrap]="!noWrap" [interval]="false" [startFromIndex]="5" (slideRangeChange)="onSlideRangeChange($event)">
     <slide *ngFor="let slide of carrusel.urls">
-        <div class="row d-flex justify-content-center">
-            <div class="col-10 d-flex justify-content-center">
-                <div class="col-6 col-lg-3 d-flex justify-content-center" *ngFor="let slides of slide">
+        <div class="row d-flex justify-content-center car">
+            <div class="col-12 col-lg-11 d-flex justify-content-between slides">
+                <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of slide">
                     <app-card [urls]="slides" [terminar]="carrusel.seguirviendo"></app-card>
                 </div>
             </div>
