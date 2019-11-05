@@ -5,6 +5,10 @@ nav {
     line-height: 29px;
 }
 
+.userinfo {
+    display: none;
+}
+
 .closebtn {
     visibility: hidden;
     position: absolute;
@@ -116,9 +120,9 @@ ul li {
     .logo {
         margin-left: 25%;
     }
-    .logo-out{
+    .logo-out {
         margin: 0 !important;
-        left:10px;
+        left: 10px;
     }
     li.userdropdown {
         left: 0px;
@@ -136,16 +140,66 @@ ul li {
         right: 20px;
     }
     .content {
-        margin-top: 80px !important;
+        margin-left: 20px;
+        margin-top: 75px !important;
     }
     .inicio {
         visibility: hidden;
     }
-    /* #iniciarsesion a{
+    #dropdownmenu h6 {
         position: absolute;
-        left:90% !important;
-        top:15px;
-    } */
+        top: -160px;
+        left: -5px;
+    }
+    #dropdownmenu {
+        display: none;
+        position: absolute;
+        top: 300px;
+        border-bottom: 1px solid white;
+    }
+    .userinfo ul li {
+        width: 150px;
+        height: 30;
+        list-style: none;
+    }
+    li svg {
+        margin-left: -50px;
+        margin-right: 19px !important;
+    }
+    li svg.notificacion {
+        margin-right: 14px !important;
+    }
+    h6 {
+        top: -200px;
+        left: 30px;
+        width: 100%;
+        border-bottom: 1px solid;
+        position: absolute;
+        /* content */
+        font-family: Martel Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    .userinfo {
+        top: 330px;
+        padding-top: 14px;
+        padding-bottom: 20px;
+        width: 100%;
+        position: absolute;
+        display: block;
+        margin-left: -11px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .userinfo a {
+        margin-top: 5px;
+    }
+    li a svg.svgnav {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) and (max-width:2000px){

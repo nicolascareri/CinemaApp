@@ -4,4 +4,12 @@
     margin-top: -40px;
     padding: 0;
     border: 0;
+    margin-left: -11px;
+}
+
+@media(max-width: 600px) {
+    .carrusel {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }
