@@ -3,6 +3,11 @@
     height: 100%;
 }
 
+div.row {
+    margin: 0;
+    padding: 0;
+}
+
 #añadir {
     left: 35%;
 }
@@ -114,16 +119,16 @@ p {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.logos{
-    position:absolute;
-    top:250px;
-    left:35px;
+.logos {
+    position: absolute;
+    top: 250px;
+    left: 35px;
 }
 
-.logo{
-    margin-left:50px;
+.logo {
+    margin-left: 50px;
     margin-right: 50px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .reproducir {
@@ -137,23 +142,23 @@ p {
 .texto-logo1,
 .texto-logo2,
 .texto-logo3 {
-    font-size:16px;
-    color:white;
+    font-size: 16px;
+    color: white;
     position: absolute;
-    top:60px;
+    top: 60px;
     left: 35px;
 }
 
-.texto-logo2{
-    margin-left:125px;
+.texto-logo2 {
+    margin-left: 125px;
 }
 
-.texto-logo3{
-    margin-left:250px;
+.texto-logo3 {
+    margin-left: 250px;
 }
 
-button.reproducir.reproducir-info{
-    top:350px;
+button.reproducir.reproducir-info {
+    top: 350px;
     left: 100px !important;
 }
 
@@ -173,7 +178,6 @@ p,
 }
 
 .listicon {
-    position: absolute;
     left: 8.86%;
     right: 73.8%;
     top: 26.47%;
@@ -390,4 +394,48 @@ div.container{
     div.float-left.meta{
         padding:15px;
     }
+}
+
+.listicon,
+.playicon,
+#video {
+    position: absolute;
+}
+
+#video {
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 20;
+    background: #000000;
+}
+
+#ventana {
+    height: 80%;
+}
+
+.pelicula {
+    height: 100%;
+    background: #000000;
+}
+
+#cerrar {
+    z-index: 21;
+}
+
+.boton {
+    height: 40px;
+    width: 40px;
+    margin: 1% 1% 0 0;
+    color: white;
+}
+
+div button span {
+    color: white;
+    z-index: 23;
+}
+
+video {
+    height: 100% !important;
 }
