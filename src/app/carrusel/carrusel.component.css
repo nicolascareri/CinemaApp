@@ -21,7 +21,7 @@ h2 {
     div.carrusel {
         margin: 0 0 0 5px;
     }
-    #carouselExampleControls, #carouselExampleControls1{
+    #carouselExampleControls{
         left:-5px !important;
         top: -20px;
     }
@@ -33,6 +33,15 @@ h2 {
     }
     .carousel-control-next{
         visibility: hidden;
+    }
+    div#carouselExampleControls1.carousel.slide.pointer-event{
+        margin-top:-50px;
+        top:70px;
+        left:-5px !important;
+    }
+    h2#h2-1{
+        margin-top:-30px;
+        left:-15px !important;
     }
 }
 
@@ -70,9 +79,10 @@ span.carousel-control-next-icon{
 } */
 
 @media (min-width: 600px) and (max-width: 1000px){
-    h2#h2{
+    h2#h2, h2#h2-1{
         left:45px;
         font-size: 22px;
+        margin-top:5px;
     }
     #carouselExampleControls, #carouselExampleControls1{
         left:15px !important;
@@ -82,6 +92,9 @@ span.carousel-control-next-icon{
     }
     .carousel-control-next{
         visibility: hidden;
+    }
+    div#carouselExampleControls1.carousel.slide.pointer-event{
+        margin-top:-5px;
     }
 }
 

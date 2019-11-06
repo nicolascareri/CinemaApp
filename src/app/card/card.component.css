@@ -13,7 +13,7 @@
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 37px;
+    left: 45px;
     right: 0;
     background-color: rgba(41, 41, 41, 0.808);
     overflow: hidden;
@@ -28,7 +28,7 @@
     cursor: pointer;
     width: 25px !important;
     height: 25px !important;
-    margin: 0px 16px;
+    margin: 0px 16px -10px;
 }
 
 .hover:hover .overlay {
