@@ -7,11 +7,11 @@ h2 {
     padding-bottom: 0.5%;
 }
 
-@media(max-width: 1000px) {
+@media (min-width:200px) and (max-width: 600px) {
     h2 {
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 14.5px;
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -21,6 +21,25 @@ h2 {
     div.carrusel {
         margin: 0 0 0 5px;
     }
+    #carouselExampleControls, #carouselExampleControls1{
+        left:-5px !important;
+        top: -20px;
+    }
+    h2#h2{
+        left:-15px !important;
+    }
+    .carousel-control-prev{
+        visibility: hidden;
+    }
+    .carousel-control-next{
+        visibility: hidden;
+    }
+}
+
+#carouselExampleControls{
+    left:-40px;
+    overflow: hidden;
+    margin-bottom:1%;
 }
 
 .row{
@@ -29,4 +48,51 @@ h2 {
 
 h2#h2 {
     margin-left: 1% !important;
+    left: -5px;
+    top: -50px;
+    position: absolute;
+}
+
+h2#h2-1{
+    margin-left: 1% !important;
+    left: -5px;
+    top: 20px;
+    position: absolute;
+} 
+
+/* span.carousel-control-prev-icon{
+    position: absolute;
+    right: 125px;
+}
+span.carousel-control-next-icon{
+    position: absolute;
+    left: 125px;
+} */
+
+@media (min-width: 600px) and (max-width: 1000px){
+    h2#h2{
+        left:45px;
+        font-size: 22px;
+    }
+    #carouselExampleControls, #carouselExampleControls1{
+        left:15px !important;
+    }
+    .carousel-control-prev{
+        visibility: hidden;
+    }
+    .carousel-control-next{
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px){
+    #carouselExampleControls, #carouselExampleControls1{
+        left:5px !important;
+    }
+}
+
+#carouselExampleControls1{
+    top:70px;
+    margin-bottom:5%;
+    left: -40px;
 }
