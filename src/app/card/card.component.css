@@ -2,6 +2,51 @@
     padding: 0;
 }
 
+.hover {
+    transition: 0.7s;
+}
+
+.hover:hover {
+    transform: scale(1.5);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 37px;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.808);
+    overflow: hidden;
+    width: 75%;
+    height: 0;
+    transition: .5s ease;
+    z-index: 200000;
+}
+
+.text svg.info {
+    color: white;
+    cursor: pointer;
+    width: 25px !important;
+    height: 25px !important;
+    margin: 0px 16px;
+}
+
+.hover:hover .overlay {
+    height: 40%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .card {
     width: 100%;
     height: 100%;
