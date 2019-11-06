@@ -73,3 +73,9 @@ img {
 .novisto {
     border-top: 3px solid #8f6800;
 }
+
+@media (max-width: 600px) {
+    .hover:hover .overlay {
+        height: 0px;
+    }
+}
