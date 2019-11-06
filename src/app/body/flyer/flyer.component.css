@@ -403,6 +403,7 @@ div.container{
 }
 
 #video {
+    display: none;
     position: absolute !important;
     top: 0px;
     left: 0px;
@@ -416,12 +417,15 @@ div.container{
 }
 
 .pelicula {
+    display: block;
     height: 100%;
     background: #000000;
 }
 
 #cerrar {
+    display: none;
     z-index: 21;
+    margin: 2% 2% 0 0;
 }
 
 .boton {
@@ -434,8 +438,4 @@ div.container{
 div button span {
     color: white;
     z-index: 23;
-}
-
-video {
-    height: 100% !important;
 }
