@@ -11,42 +11,42 @@ export class FlyerComponent implements OnInit {
   constructor() {
    
    }
-   carruseles =[
-    {
-      "titulo": "Nicolas, ¿Te gustaria continuar alguna de estas?",
+   temporadas ={
+      "titulo": "Capitulos",
       "urls" :[
         [
-          "assets/films/dark.jpg",
-          "assets/films/vikings.jpg",
-          "assets/films/mindhunter.jpg",
-          "assets/films/Downton.jpg",
+          "assets/temporadas/2.jpeg",
+          "assets/temporadas/2.jpg",
+          "assets/temporadas/3.jpg",
+          "assets/temporadas/4.jpg",
         ],[
-          "assets/films/avengers.png",
-          "assets/films/aladin.jpg",
-          "assets/films/alita.jpg",
-          "assets/films/skyfall.jpg",
+          "assets/temporadas/4.jpg",
+          "assets/temporadas/2.jpg",
+          "assets/temporadas/3.jpg",
+          "assets/temporadas/2.jpeg",
         ],[
-          "assets/films/war.jpg",
-          "assets/films/toystory.jpg",
-          "assets/films/joker.jpg",
-          "assets/films/mindhunter.jpg",
+          "assets/temporadas/2.jpg",
+          "assets/temporadas/2.jpeg",
+          "assets/temporadas/4.jpg",
+          "assets/temporadas/3.jpg",
         ]
       ],
-      seguirviendo:true
+      seguirviendo: false
     }
-  ]
   toggleVideo(){
     let video = document.getElementById("video") as HTMLElement;
-    video.classList.add("pelicula");
-    video.classList.remove("d-none");
-    
-    let ventana = document.getElementById("ventana") as HTMLElement;
-    ventana.classList.remove("d-none");
+    video.style.display= "block";
+    video.style.height = "100%";
+    video.style.transform = "traslate(0, -50px);"
     let cerrar = document.getElementById("cerrar");
-    cerrar.classList.remove("d-none");
-    cerrar.classList.add("d-flex", "justify-self-end", "align-self-start", "boton");
+    cerrar.style.display = "block";
+    
+    // let ventana = document.getElementById("ventana") as HTMLElement;
+    // ventana.classList.remove("d-none");
+    // cerrar.classList.remove("d-none");
+    // cerrar.classList.add("d-flex", "justify-self-end", "align-self-start", "boton");
     cerrar.addEventListener("click", function(){
-  
+          video.style.display = "none";
     });
 
   }
