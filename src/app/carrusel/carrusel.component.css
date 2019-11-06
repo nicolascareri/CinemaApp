@@ -43,12 +43,27 @@ h2 {
         margin-top:-30px;
         left:-15px !important;
     }
+    h2#h2-2{
+        position: absolute;
+        top:60px;
+        left:-10px;
+    }
+    div#carouselExampleControls2.carousel.slide.pointer-event{
+        top: 95px;
+        margin-bottom: 15%;
+        left: -5px !important;
+    }
 }
 
 #carouselExampleControls{
     left:-40px;
     overflow: hidden;
     margin-bottom:1%;
+}
+
+#carouselExampleControls2{
+    left: -40px;
+    margin-top: 1%;
 }
 
 .row{
@@ -68,6 +83,10 @@ h2#h2-1{
     top: 20px;
     position: absolute;
 } 
+
+h2#h2-2{
+    margin-top:2%;  
+}
 
 /* span.carousel-control-prev-icon{
     position: absolute;
@@ -95,6 +114,16 @@ span.carousel-control-next-icon{
     }
     div#carouselExampleControls1.carousel.slide.pointer-event{
         margin-top:-5px;
+    }
+    div#carouselExampleControls2.carousel.slide.pointer-event{
+        top: 95px;
+        margin-bottom: 15%;
+        left:15px;
+    }
+    h2#h2-2{
+        position: absolute;
+        top:60px;
+        left:45px;
     }
 }
 
