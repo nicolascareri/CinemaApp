@@ -1,3 +1,18 @@
+<div class="video" id="video">
+    <div class="row d-flex justify-content-end">
+        <button id="cerrar"><span class="d-flex justify-self-center">X</span>X</button>
+    </div>
+    <div class="row d-flex justify-content-center ">
+        <div class="d-none col-12 col-lg-8 d-flex justify-content-center" id="ventana">
+            <video controls>
+                                            <source src="assets/films/peaky.mp4" type="video/mp4">
+                                    </video>
+        </div>
+    </div>
+    <div class="row">
+        <app-carrusel [carrusel]="temporadas"></app-carrusel>
+    </div>
+</div>
 <div class="carro flyerr">
     <div class="img-container">
         <div class="descripcion">
@@ -34,6 +49,7 @@
                 </button>
                 <div class="logos" *ngIf="!info">
                     <svg class="logo" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       
                         <path d="M0 15H12V12H0V15ZM24 12V6H21V12H15V15H21V21H24V15H30V12H24ZM18 0H0V3H18V0ZM18 6H0V9H18V6Z"
                             fill="#EFC23E" />
                     </svg>
@@ -114,20 +130,5 @@
                 </button>
             </div>
         </div>
-    </div>
-</div>
-<div class="video" id="video">
-    <div class="row d-flex justify-content-end">
-        <button class="d-none" id="cerrar"><span class="d-flex justify-self-center">X</span> </button>
-    </div>
-    <div class="row d-flex justify-content-center ">
-        <div class="d-none col-12 col-lg-8 d-flex justify-content-center" id="ventana">
-            <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
-                    <source src="assets/films/peaky.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    <div class="row">
-        <app-carrusel [carrusel]="carruseles[0]"></app-carrusel>
     </div>
 </div>
