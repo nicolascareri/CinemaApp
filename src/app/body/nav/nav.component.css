@@ -67,7 +67,7 @@ ul.navbar-nav.ml-auto.text-right {
 
 .userdropdown {
     left: 10px;
-    top:5px;
+    top: 5px;
 }
 
 ul li {
@@ -184,9 +184,28 @@ ul li {
     height: 150px;
 }
 
-@media (max-width: 1000px) {
-    nav{
-        padding-top: 8px;
+@media (max-width: 600px) {
+    .overlay-content svg {
+        right: 0px;
+    }
+    .filtros {
+        width: 400px;
+        margin-left: -60px !important;
+    }
+    .filtros li {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 0px !important;
+    }
+    .peliculas {
+        width: 400px;
+        margin-left: 60px !important;
+        margin-top: 10px;
+    }
+    .peliculas li {
+        margin: 20px 10px 20px 0px;
+        width: 110px;
+        height: 50px;
     }
     .footernav {
         display: block;
@@ -327,5 +346,11 @@ ul li {
         position: absolute;
         left: 85% !important;
         top: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding-top: 8px;
     }
 }

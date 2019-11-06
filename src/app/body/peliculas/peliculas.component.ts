@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-peliculas',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeliculasComponent implements OnInit {
 
+  intervalScore: any;
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

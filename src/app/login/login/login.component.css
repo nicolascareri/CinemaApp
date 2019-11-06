@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+.text {
+    transition: 1s;
+}
+
+.text:focus {
+    transform: scale(1.1);
+}
+
 h3.titulo {
     font-weight: 700;
 }
