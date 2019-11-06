@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pago.component.css']
 })
 export class PagoComponent implements OnInit {
-
+  logeado:boolean
   constructor() { }
 
   ngOnInit() {
