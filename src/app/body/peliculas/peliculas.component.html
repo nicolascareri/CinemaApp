@@ -1,1 +1,23 @@
-<app-carrusel></app-carrusel>
+<div class="notfound">
+    <h1>404</h1>
+    <h2>La página que intenta acceder no existe o no está implementada aún..</h2>
+</div>
+<div class="background" (keypress)="onkeypress">
+    <div class="middle-background">
+        <div class="front-background">
+            <div id="oldman" class="oldman">
+            </div>
+            <div id="obstaculo" class="obstaculo">
+            </div>
+            <div class="instructions">
+                <div id="screen" class="pressEnterText"></div>
+            </div>
+            <div class="contain-score">
+                <div class="score">Score: 0</div>
+                <div class="highscore">High Score: 0</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="main.js" type="module"></script>

@@ -1,0 +1,196 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 288px;
+    background-image: url(/assets/background/backgroundsprite.png);
+    animation: fondo 64s steps(4104) infinite;
+    animation-play-state: paused;
+    z-index: 20;
+}
+
+.middle-background {
+    position: relative;
+    width: 100%;
+    height: 288px;
+    background-image: url(/assets/background/middlegroundsprite.png);
+    animation: mediofondo 64s steps(2056) infinite;
+    animation-play-state: paused;
+    z-index: 10;
+}
+
+.front-background {
+    position: relative;
+    width: 100%;
+    height: 274px;
+    background-image: url(/assets/background/frontgroundsprite.png);
+    animation: frente 50s steps(1024) infinite;
+    animation-play-state: paused;
+    z-index: 7;
+}
+
+.oldman {
+    top: 210px;
+    left: 10%;
+    width: 34px;
+    height: 42px;
+    position: relative;
+    background-image: url(/assets/character/oldman-idle.png);
+    animation: imp 2s steps(12) infinite;
+    /* animation-play-state: paused; */
+    z-index: 0;
+}
+
+.imp {
+    top: 210px;
+    left: 10%;
+    width: 34px;
+    height: 42px;
+    position: relative;
+    background-image: url(/assets/character/oldman-walk.png);
+    animation: imp 0.5s steps(12) infinite;
+    z-index: 0;
+}
+
+.saltar {
+    top: 210px;
+    left: 10%;
+    width: 34px;
+    height: 42px;
+    position: relative;
+    background-image: url(/assets/character/oldman-walk.png);
+    animation: saltar 1s steps(12);
+    z-index: 0;
+}
+
+.obstaculo {
+    top: 179px;
+    width: 39px;
+    height: 35px;
+    position: relative;
+    background-image: url(/assets/obstaculos/crate.png);
+    animation: obstaculo 2s infinite linear;
+    animation-play-state: paused;
+    z-index: 0;
+}
+
+.pressEnterText {
+    top: 75%;
+    left: 30%;
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    background-size: cover;
+    background-image: url(/assets/screentext/press-enter.png);
+    z-index: 60;
+}
+
+.instructions {
+    left: 0%;
+    bottom: 50%;
+    position: absolute;
+    width: 256px;
+    height: 50%;
+    background-size: contain;
+    background-image: url(/assets/screentext/instructionSpace.png);
+    z-index: 50;
+}
+
+.contain-score {
+    position: absolute;
+    left: 75%;
+    top: 0px;
+}
+
+.score {
+    /* text-align: center; */
+    text-justify: auto;
+    color: orange;
+    position: relative;
+    /* background-image: url(/Tp3/EntregaFinal/spriteSheets/screentext/Score.png); */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant-numeric: oldstyle-nums;
+    z-index: 50;
+}
+
+.highscore {
+    /* bottom: 50%; */
+    text-align: center;
+    text-justify: auto;
+    color: orange;
+    position: relative;
+    /* background-image: url(/Tp3/EntregaFinal/spriteSheets/screentext/Score.png); */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant-numeric: oldstyle-nums;
+    z-index: 50;
+}
+
+@keyframes obstaculo {
+    0% {
+        left: 97%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes fondo {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1536px 0
+    }
+}
+
+@keyframes mediofondo {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -3072px 0
+    }
+}
+
+@keyframes frente {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -4140px 0
+    }
+}
+
+@keyframes imp {
+    100% {
+        background-position: -408px 0
+    }
+}
+
+@keyframes saltar {
+    30% {
+        top: 120px;
+    }
+    50% {
+        top: 120px;
+    }
+    60% {
+        top: 140px;
+    }
+    70% {
+        top: 160px;
+    }
+    80% {
+        top: 180px;
+    }
+    90% {
+        top: 200px;
+    }
+    100% {
+        background-position: -408px 0
+    }
+}
