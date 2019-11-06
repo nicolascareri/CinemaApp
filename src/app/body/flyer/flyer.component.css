@@ -3,6 +3,11 @@
     height: 100%;
 }
 
+div.row {
+    margin: 0;
+    padding: 0;
+}
+
 #añadir {
     left: 35%;
 }
@@ -114,16 +119,16 @@ p {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.logos{
-    position:absolute;
-    top:250px;
-    left:35px;
+.logos {
+    position: absolute;
+    top: 250px;
+    left: 35px;
 }
 
-.logo{
-    margin-left:50px;
+.logo {
+    margin-left: 50px;
     margin-right: 50px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .reproducir {
@@ -137,23 +142,23 @@ p {
 .texto-logo1,
 .texto-logo2,
 .texto-logo3 {
-    font-size:16px;
-    color:white;
+    font-size: 16px;
+    color: white;
     position: absolute;
-    top:60px;
+    top: 60px;
     left: 35px;
 }
 
-.texto-logo2{
-    margin-left:125px;
+.texto-logo2 {
+    margin-left: 125px;
 }
 
-.texto-logo3{
-    margin-left:250px;
+.texto-logo3 {
+    margin-left: 250px;
 }
 
-button.reproducir.reproducir-info{
-    top:350px;
+button.reproducir.reproducir-info {
+    top: 350px;
     left: 100px !important;
 }
 
@@ -173,7 +178,6 @@ p,
 }
 
 .listicon {
-    position: absolute;
     left: 8.86%;
     right: 73.8%;
     top: 26.47%;
@@ -235,4 +239,203 @@ p,
         background-repeat: no-repeat;
         background-size: cover;
     }
+}
+
+.card-white  .card-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd;
+     border: 1px solid #dddddd;
+  }
+
+.card-white  .card-footer {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.card-white .h5 {
+    font-size:14px;
+}
+
+.card-white .time {
+    font-size:12px;
+}
+
+.post .post-heading {
+    height: 95px;
+    padding: 20px 15px;
+ }
+
+.post .post-heading .avatar {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 15px;
+    border-radius: 80% !important;
+}
+
+.post .post-heading .meta .title {
+    margin-bottom: 0;
+}
+
+.post .post-heading .meta .title a {
+    color: black;
+}
+
+.post .post-heading .meta .title a:hover {
+    color: #aaaaaa;
+}
+
+.meta{
+    margin-top: 10px;
+}
+
+.post .post-heading .meta .time {
+    margin-top: 8px;
+    color: #999;
+}
+
+.post .post-image .image {
+    width: 100%;
+    height: auto;
+}
+
+  .post .post-description {
+    padding: 15px;
+  }
+
+.post .post-description p {
+    font-size: 14px;
+}
+
+.post .post-description .stats {
+    margin-top: 20px;
+}
+
+.post .post-description .stats .stat-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.post .post-description .stats .stat-item .icon {
+    margin-right: 8px;
+}
+
+.post .post-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+
+.post .post-footer .input-group-addon a {
+    color: #454545;
+}
+
+.post .post-footer .comments-list {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+  
+.post .post-footer .comments-list .comment {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.post .post-footer .comments-list .comment .avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.post .post-footer .comments-list .comment .comment-heading {
+    display: block;
+    width: 100%;
+}
+
+.post .post-footer .comments-list .comment .comment-heading .user {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+    margin-right: 10px;
+}
+
+.comment{
+    text-shadow: none !important;
+    color:black;
+}
+
+.post .post-footer .comments-list .comment .comment-heading .time {
+    font-size: 12px;
+    color: #aaa;
+    
+    display: inline;
+}
+
+.post .post-footer .comments-list .comment .comment-body {
+    margin-left: 50px;
+  }
+
+.post .post-footer .comments-list .comment > .comments-list {
+    margin-left: 50px;
+}
+
+div.container{
+    margin-bottom: 10%;
+    max-width: 70%;
+}
+
+@media(max-width: 600px) {
+    div.title.h5{
+        position:absolute;
+    }
+    div.container{
+       max-width: 120% !important;
+    }
+    div.float-left.meta{
+        padding:15px;
+    }
+}
+
+.listicon,
+.playicon,
+#video {
+    position: absolute;
+}
+
+#video {
+    display: none;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 20;
+    background: #000000;
+}
+
+#ventana {
+    height: 80%;
+}
+
+.pelicula {
+    display: block;
+    height: 100%;
+    background: #000000;
+}
+
+#cerrar {
+    display: none;
+    z-index: 21;
+    margin: 2% 2% 0 0;
+}
+
+.boton {
+    height: 40px;
+    width: 40px;
+    margin: 1% 1% 0 0;
+    color: white;
+}
+
+div button span {
+    color: white;
+    z-index: 23;
 }
