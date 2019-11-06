@@ -7,7 +7,42 @@ h2 {
     padding-bottom: 0.5%;
 }
 
-@media (min-width:200px) and (max-width: 600px) {
+div#carouselExampleControls {
+    left: -27px !important;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+div#carouselExampleControls2 {
+    left: -27px !important;
+    margin-top: 1%;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+h2#h2 {
+    margin-left: 1% !important;
+    left: 10px;
+    top: -50px;
+    position: absolute;
+}
+
+h2#h2-1 {
+    margin-left: 1% !important;
+    left: 10px;
+    top: 20px;
+    position: absolute;
+}
+
+h2#h2-2 {
+    left: 14px !important;
+    margin-top: 2%;
+    margin-left: 9px;
+}
+
+@media (max-width: 600px) {
     h2 {
         font-style: normal;
         font-weight: normal;
@@ -21,72 +56,40 @@ h2 {
     div.carrusel {
         margin: 0 0 0 5px;
     }
-    #carouselExampleControls{
-        left:-5px !important;
+    div#carouselExampleControls {
+        left: -8px !important;
         top: -20px;
     }
-    h2#h2{
-        left:-15px !important;
+    h2#h2 {
+        left: -15px !important;
     }
-    .carousel-control-prev{
+    .carousel-control-prev {
         visibility: hidden;
     }
-    .carousel-control-next{
+    .carousel-control-next {
         visibility: hidden;
     }
-    div#carouselExampleControls1.carousel.slide.pointer-event{
-        margin-top:-50px;
-        top:70px;
-        left:-5px !important;
+    div#carouselExampleControls1.carousel.slide.pointer-event {
+        margin-top: -50px;
+        top: 70px;
+        left: -5px !important;
     }
-    h2#h2-1{
-        margin-top:-30px;
-        left:-15px !important;
+    h2#h2-1 {
+        margin-top: -30px;
+        left: -15px !important;
     }
-    h2#h2-2{
+    h2#h2-2 {
         position: absolute;
-        top:60px;
-        left:-10px;
+        top: 60px;
+        left: -10px;
     }
-    div#carouselExampleControls2.carousel.slide.pointer-event{
+    div#carouselExampleControls2.carousel.slide.pointer-event {
         top: 95px;
         margin-bottom: 15%;
         left: -5px !important;
     }
 }
 
-#carouselExampleControls{
-    left:-40px;
-    overflow: hidden;
-    margin-bottom:1%;
-}
-
-#carouselExampleControls2{
-    left: -40px;
-    margin-top: 1%;
-}
-
-.row{
-    margin: 0 !important;
-}
-
-h2#h2 {
-    margin-left: 1% !important;
-    left: -5px;
-    top: -50px;
-    position: absolute;
-}
-
-h2#h2-1{
-    margin-left: 1% !important;
-    left: -5px;
-    top: 20px;
-    position: absolute;
-} 
-
-h2#h2-2{
-    margin-top:2%;  
-}
 
 /* span.carousel-control-prev-icon{
     position: absolute;
@@ -97,44 +100,47 @@ span.carousel-control-next-icon{
     left: 125px;
 } */
 
-@media (min-width: 600px) and (max-width: 1000px){
-    h2#h2, h2#h2-1{
-        left:45px;
+@media (min-width: 600px) and (max-width: 1000px) {
+    h2#h2,
+    h2#h2-1 {
+        left: 45px;
         font-size: 22px;
-        margin-top:5px;
+        margin-top: 5px;
     }
-    #carouselExampleControls, #carouselExampleControls1{
-        left:15px !important;
+    #carouselExampleControls,
+    #carouselExampleControls1 {
+        left: 15px !important;
     }
-    .carousel-control-prev{
+    .carousel-control-prev {
         visibility: hidden;
     }
-    .carousel-control-next{
+    .carousel-control-next {
         visibility: hidden;
     }
-    div#carouselExampleControls1.carousel.slide.pointer-event{
-        margin-top:-5px;
+    div#carouselExampleControls1.carousel.slide.pointer-event {
+        margin-top: -5px;
     }
-    div#carouselExampleControls2.carousel.slide.pointer-event{
+    div#carouselExampleControls2.carousel.slide.pointer-event {
         top: 95px;
         margin-bottom: 15%;
-        left:15px;
+        left: 15px;
     }
-    h2#h2-2{
+    h2#h2-2 {
         position: absolute;
-        top:60px;
-        left:45px;
+        top: 60px;
+        left: 45px;
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1500px){
-    #carouselExampleControls, #carouselExampleControls1{
-        left:5px !important;
+@media (min-width: 1000px) and (max-width: 1500px) {
+    #carouselExampleControls,
+    #carouselExampleControls1 {
+        left: 5px !important;
     }
 }
 
-#carouselExampleControls1{
-    top:70px;
-    margin-bottom:5%;
-    left: -40px;
+div#carouselExampleControls1 {
+    top: 70px;
+    margin-bottom: 5%;
+    left: -27px !important;
 }
