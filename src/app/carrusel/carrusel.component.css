@@ -21,7 +21,7 @@ h2 {
     div.carrusel {
         margin: 0 0 0 5px;
     }
-    #carouselExampleControls{
+    #carouselExampleControls, #carouselExampleControls1{
         left:-5px !important;
         top: -20px;
     }
@@ -39,6 +39,7 @@ h2 {
 #carouselExampleControls{
     left:-40px;
     overflow: hidden;
+    margin-bottom:1%;
 }
 
 .row{
@@ -51,6 +52,13 @@ h2#h2 {
     top: -50px;
     position: absolute;
 }
+
+h2#h2-1{
+    margin-left: 1% !important;
+    left: -5px;
+    top: 20px;
+    position: absolute;
+} 
 
 /* span.carousel-control-prev-icon{
     position: absolute;
@@ -66,7 +74,7 @@ span.carousel-control-next-icon{
         left:45px;
         font-size: 22px;
     }
-    #carouselExampleControls{
+    #carouselExampleControls, #carouselExampleControls1{
         left:15px !important;
     }
     .carousel-control-prev{
@@ -78,7 +86,13 @@ span.carousel-control-next-icon{
 }
 
 @media (min-width: 1000px) and (max-width: 1500px){
-    #carouselExampleControls{
+    #carouselExampleControls, #carouselExampleControls1{
         left:5px !important;
     }
+}
+
+#carouselExampleControls1{
+    top:70px;
+    margin-bottom:5%;
+    left: -40px;
 }
