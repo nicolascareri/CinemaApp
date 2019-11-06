@@ -3,24 +3,12 @@
         <h2 calss="text-center" id="h2">{{carrusel.titulo}}</h2>
     </div>
 </div>
-<!-- <carousel class="no-indicators">
-    <slide *ngFor="let slide of carrusel.urls">
-        <div class="row d-flex justify-content-center car">
-            <div class="col-12 col-lg-11 d-flex justify-content-between slides">
-                <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of slide">
-                    <app-card [urls]="slides" [terminar]="carrusel.seguirviendo"></app-card>
-                </div>
-            </div>
-        </div>
-    </slide>
-</carousel> -->
-
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row d-flex justify-content-center car">
-                <div class="col-12 col-lg-11 d-flex justify-content-between slides">
-                    <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of carrusel.urls[0]" >
+                <div class="col-10 col-lg-11 d-flex justify-content-center slides">
+                    <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of carrusel.urls[0]">
                         <app-card [urls]="slides" [terminar]="carrusel.seguirviendo"></app-card>
                     </div>
                 </div>
@@ -28,7 +16,7 @@
         </div>
         <div class="carousel-item">
             <div class="row d-flex justify-content-center car">
-                <div class="col-12 col-lg-11 d-flex justify-content-between slides">
+                <div class="col-10 col-lg-11 d-flex justify-content-center slides">
                     <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of carrusel.urls[1]">
                         <app-card [urls]="slides" [terminar]="carrusel.seguirviendo"></app-card>
                     </div>
@@ -37,7 +25,7 @@
         </div>
         <div class="carousel-item">
             <div class="row d-flex justify-content-center car">
-                <div class="col-12 col-lg-11 d-flex justify-content-between slides">
+                <div class="col-10 col-lg-11 d-flex justify-content-center slides">
                     <div class="col-4 col-lg-3 d-flex justify-content-center" *ngFor="let slides of carrusel.urls[2]">
                         <app-card [urls]="slides" [terminar]="carrusel.seguirviendo"></app-card>
                     </div>
