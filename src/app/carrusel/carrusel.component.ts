@@ -6,7 +6,11 @@ import { Component, OnInit,  Input  } from '@angular/core';
 })
 export class CarruselComponent implements OnInit {
   constructor() { }
-  @Input() carrusel: {};
+  @Input() carrusel: {
+    titulo: String,
+    urls: [[],[],[]],
+    seguirviendo: boolean
+  };
   @Input() car: {};
 
   public ngOnInit(){
