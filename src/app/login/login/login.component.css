@@ -1,12 +1,21 @@
 * {
     margin: 0;
 }
-h3.titulo{
+
+.text {
+    transition: 1s;
+}
+
+.text:focus {
+    transform: scale(1.1);
+}
+
+h3.titulo {
     font-weight: 700;
 }
+
 form {
     font-weight: 650;
-    
 }
 
 .logo {
@@ -14,7 +23,7 @@ form {
     margin-top: 50px;
 }
 
-div.input{
+div.input {
     margin-top: 20px;
 }
 
@@ -23,13 +32,13 @@ button.btn {
     height: 50px;
     border-radius: 0px;
 }
-button{
+
+button {
     width: 100%;
 }
 
-ul.register{
+ul.register {
     margin-bottom: 55px;
-
 }
 
 #login-box {
@@ -53,7 +62,6 @@ h3.titulo {
 
 .input {
     margin: 10px 0;
-
 }
 
 ul li {
@@ -71,4 +79,3 @@ div.col-10 form.form,
 div.row.d-flex.regist {
     margin: 20px 0 !important;
 }
-
