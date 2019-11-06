@@ -1,12 +1,11 @@
 <div class="carro flyerr">
     <div class="img-container">
-
         <div class="descripcion">
             <h1>VIERNES DE ESTRENO</h1>
             <h2>Peaky Blinders</h2>
             <p>1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.</p>
-            <div class="botones" >
-                <button class="reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="info">
+            <div class="botones">
+                <button id="reproducir" (click)="toggleVideo()" class="reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter">
                     <svg class="playicon" width="49" height="49" viewBox="0 0 49 49" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d)">
@@ -31,7 +30,6 @@
                             </filter>
                         </defs>
                     </svg>
-
                     <span id="reproducir">REPRODUCIR</span>
                 </button>
                 <div class="logos" *ngIf="!info">
@@ -59,8 +57,8 @@
                             fill="#F6D04F" />
                     </svg>
                     <span class="texto-logo3">Compartir</span>
-                </div>   
-                    
+                </div>
+
                 <button class="reproducir-info reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="!info">
                     <svg class="playicon" width="49" height="49" viewBox="0 0 49 49" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -117,30 +115,19 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <!-- <rating [max]='10' [(ngModel)]="y" [customTemplate]="tt"></rating> <div
-                        class="card"> <pre class="card-block card-header" style="margin:15px 0;">
-                        <b>(<i>Rate:</i> {{y}})</b> </pre> </div> <ng-template #tt let-i="index"
-                        let-v="value"> <button class="btn btn-{{i < v ? 'warning' : 'default'}}"> {{i <
-                        v ? '&#9733;' : '&#9734;'}} </button> </ng-template> -->
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
+</div>
+<div class="video" id="video">
+    <div class="row d-flex justify-content-end">
+        <button class="d-none" id="cerrar"><span class="d-flex justify-self-center">X</span> </button>
+    </div>
+    <div class="row d-flex justify-content-center ">
+        <div class="d-none col-12 col-lg-8 d-flex justify-content-center" id="ventana">
+            <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                    <source src="assets/films/peaky.mp4" type="video/mp4">
+            </video>
         </div>
+    </div>
+    <div class="row">
+        <app-carrusel [carrusel]="carruseles[0]"></app-carrusel>
     </div>
 </div>
