@@ -16,7 +16,7 @@ export class FlyerComponent implements OnInit {
       "urls" :[
         [
           "assets/temporadas/2.jpeg",
-          "assets/temporadas/2.jpg",
+          "assets/temporadas/descarga.jpg",
           "assets/temporadas/3.jpg",
           "assets/temporadas/4.jpg",
         ],[
@@ -35,6 +35,7 @@ export class FlyerComponent implements OnInit {
     }
   toggleVideo(){
     let video = document.getElementById("video") as HTMLElement;
+    video.style.transition = "all 2s";
     video.style.display= "block";
     video.style.height = "100%";
     video.style.transform = "traslate(0, -50px);"
