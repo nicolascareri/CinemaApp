@@ -389,10 +389,20 @@ div.container{
         position:absolute;
     }
     div.container{
-       max-width: 120% !important;
+       max-width: 100% !important;
     }
     div.float-left.meta{
         padding:15px;
+    }
+    .logos{
+        left:0px;
+        top:270px;
+        margin-left: -10px;
+    }
+    button.reproducir-info.reproducir{
+        width:150px;
+        height: 40px;
+        left:120px !important;
     }
 }
 

@@ -18,7 +18,7 @@
             <h2>Peaky Blinders</h2>
             <p>1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.</p>
             <div class="botones">
-                <button id="reproducir" (click)="toggleVideo()" class="reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <button id="reproducir" (click)="toggleVideo()" class="reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="info">
                     <svg class="playicon" width="49" height="49" viewBox="0 0 49 49" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d)">

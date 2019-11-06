@@ -3,6 +3,11 @@ h2 {
     text-align: center;
 }
 
+.notfound{
+    margin-top: 5% !important;
+    margin-bottom: 5%;
+}
+
 .background {
     position: relative;
     width: 100%;
@@ -11,6 +16,7 @@ h2 {
     animation: fondo 64s steps(4104) infinite;
     animation-play-state: paused;
     z-index: 20;
+    margin-bottom: 10%;
 }
 
 .middle-background {
@@ -102,7 +108,7 @@ h2 {
 
 .contain-score {
     position: absolute;
-    left: 75%;
+    left: 90%;
     top: 0px;
 }
 
