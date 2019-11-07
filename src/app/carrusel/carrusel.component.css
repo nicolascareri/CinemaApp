@@ -81,7 +81,7 @@ h2#h2-2 {
     h2#h2-2 {
         position: absolute;
         top: 60px;
-        left: -10px;
+        left: -17px !important;
     }
     div#carouselExampleControls2.carousel.slide.pointer-event {
         top: 95px;

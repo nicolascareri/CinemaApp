@@ -90,7 +90,7 @@ p {
 }
 
 .img-container {
-    background-image: url("/assets/fondoPB.jpeg");
+    background-image: url("../../../assets/fondoPB.jpeg");
     height: 655px;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ p,
         width: 72%;
     }
     .img-container {
-        background-image: url("/assets/fondoPB.jpeg");
+        background-image: url("../../../assets/fondoPB.jpeg");
         height: 400px;
         background-position-x: center;
         background-repeat: no-repeat;
