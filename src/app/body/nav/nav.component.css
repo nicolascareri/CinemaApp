@@ -42,7 +42,12 @@ h6.dropdown-header{
 .li-menu{
     list-style: none;
     margin-top:15px;
-    height: 100px;
+    height: 110px;
+}
+
+.texto-dropdown{
+    margin-left:20px;
+    cursor: pointer;
 }
 
 .closebtn {
@@ -143,6 +148,10 @@ ul li {
     text-align: center;
     margin-top: 30px;
     margin: auto;
+}
+
+.texto-nav:hover{
+    color: #DAAD29;
 }
 
 .overlay .closesearch {
@@ -258,7 +267,7 @@ ul li {
         text-align: center;
         position: absolute;
         width: 100%;
-        top: 550px;
+        top: 600px;
     }
     .icon {
         display: block;

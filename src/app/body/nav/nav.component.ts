@@ -41,7 +41,9 @@ export class NavComponent implements OnInit {
   @HostListener('document:wheel', ['$event.target'])
   public onWheel() {
     let nav = document.getElementById("navbar") as HTMLElement;
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 40) {
+    if (window.pageYOffset > nav.clientHeight) {
+      // console.log(window.pageYOffset);
+      // console.log(nav.clientHeight);
       nav.style.backgroundColor = "black";
     } else {
       nav.style.background = "rgba(0, 0, 0, 0.3)";
