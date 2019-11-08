@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -36,5 +36,15 @@ export class NavComponent implements OnInit {
   closeSearch() {
     let div = document.getElementById("myOverlay") as HTMLElement;
     div.style.display = "none";
+  }
+
+  @HostListener('document:wheel', ['$event.target'])
+  public onWheel(targetElement) {
+    let nav = document.getElementById("navbar") as HTMLElement;
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      nav.style.backgroundColor = "black";
+    } else {
+      nav.style.background = "rgba(0, 0, 0, 0.3)";
+    }
   }
 }
