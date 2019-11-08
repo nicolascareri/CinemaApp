@@ -8,9 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { aLoginComponent } from "./login/login.component";
 import { LoginModule } from './login/login.module';
 import { BodyModule } from './body/body.module';
+import { MicuentaComponent } from './micuenta/micuenta.component';
+import { MicuentaModule } from './micuenta/micuenta.module';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
+    MicuentaComponent,
     aLoginComponent,
     AppComponent,
     BodyComponent,
@@ -18,6 +23,7 @@ import { BodyModule } from './body/body.module';
   ],
   imports: [
     LoginModule,
+    MicuentaModule,
     BodyModule,
     AppRoutingModule,
     BrowserModule,

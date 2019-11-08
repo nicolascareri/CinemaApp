@@ -1,0 +1,12 @@
+#acordion{
+  width: 100%;
+  margin: 2% 0;
+}
+div div button{
+  background: none !important;
+  box-shadow: none !important;
+}
+button:hover{
+  box-shadow: 0 !important;
+
+}
