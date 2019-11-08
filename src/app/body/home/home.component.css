@@ -1,15 +1,16 @@
 .carrusel {
     transform: translate(0, -70px) !important;
     z-index: 0;
-    margin-top: -40px;
+    margin-top: 23px;
     padding: 0;
     border: 0;
-    margin-left: -11px;
+    margin-left: -24px;
 }
 
 @media(max-width: 600px) {
     .carrusel {
-        margin-top: 20px;
+        margin-top: 60px;
         margin-left: 10px;
+        transform: translate(0, -40px) !important;
     }
 }
