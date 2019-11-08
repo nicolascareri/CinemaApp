@@ -11,8 +11,38 @@ nav {
     display: none;
 }
 
+#dropdownmenu{
+    margin-right: 5px;
+}
+
 .userinfo {
     display: none;
+}
+
+.icono-notificacion, .icono-sesion, .icono-cuenta{
+    position: absolute;
+}
+
+.icono-cuenta{
+    margin-left:-25px;
+}
+
+.icono-notificacion{
+    margin-left:-24px;
+}
+
+h6.dropdown-header{
+    font-size: 16px;
+}
+
+.icono-sesion{
+    margin-left: -21px;
+}
+
+.li-menu{
+    list-style: none;
+    margin-top:15px;
+    height: 100px;
 }
 
 .closebtn {
