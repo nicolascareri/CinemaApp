@@ -2,6 +2,7 @@
 a{
   font-size: 16px;
   background: white;
+  color:black;
 }
 a:hover{
   color: black;
@@ -18,6 +19,8 @@ a:focus, .active{
 }
 .box{
   margin: 2% 0;
+}.box2{
+  margin: 3.5% 0;
 }
 .top{
   margin: 1% 0;
