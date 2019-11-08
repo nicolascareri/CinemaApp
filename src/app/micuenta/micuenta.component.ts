@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./micuenta.component.css']
 })
 export class MicuentaComponent implements OnInit {
-
+  logeado: Boolean
   constructor() { }
 
   ngOnInit() {
