@@ -314,7 +314,6 @@ h4 {
 
 div.comentarios {
     margin-left: 79px;
-    margin-top: -60px;
 }
 
 textarea {
@@ -636,7 +635,6 @@ div.container {
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     }
     div.comentarios {
-        margin-top: -50px;
         margin-left: 4.5%;
     }
     div.cominstance {
