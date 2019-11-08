@@ -339,6 +339,11 @@ input.comentar {
     font-size: 20px;
 }
 
+.criticas {
+    font-size: 26px !important;
+    padding-bottom: 15px;
+}
+
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 
@@ -364,8 +369,8 @@ input.comentar {
     textarea {
         width: 315px;
     }
-    .criticas {
-        font-size: 20px;
+    criticas {
+        font-size: 20px !important;
         margin-bottom: 5px;
     }
     div.rate.com {
