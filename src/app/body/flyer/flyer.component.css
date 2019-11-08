@@ -186,7 +186,149 @@ p,
     bottom: 25.29%;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btncomentar {
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 50%;
+    height: 100px;
+    font-size: 26px;
+}
+
+.rate {
+    position: absolute;
+    top: -7%;
+    left: 25%;
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+#comment {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 222222222;
+}
+
+h4 {
+    position: absolute;
+    top: -30px;
+}
+
+.labelComentar {
+    font-size: 20px;
+}
+
+div.comentarios {
+    margin-left: 50px;
+}
+
+textarea {
+    width: 720px;
+    height: 300px;
+    margin-top: 40px;
+    color: white;
+    transition: 1s;
+    background: transparent;
+    font-size: 20px;
+}
+
+textarea:focus {
+    transform: scale(1.1);
+}
+
+input.comentar {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+}
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
 @media screen and (max-width: 600px) {
+    .criticas {
+        font-size: 20px;
+    }
+    .rate {
+        top: 65px;
+        left: 93px;
+    }
+    input:checked {
+        color: #deb217;
+    }
+    input:not(:checked) {
+        color: white;
+    }
     .descripcion {
         left: -10px;
         top: 0px;
@@ -263,6 +405,14 @@ p,
 
 .card-white .time {
     font-size: 12px;
+}
+
+.cominstance {
+    margin-bottom: 50px !important;
+}
+
+.post {
+    height: 169px;
 }
 
 .post .post-heading {
@@ -387,9 +537,14 @@ div.container {
     max-width: 70%;
 }
 
+.post-description {
+    padding: 0 20px !important;
+}
+
 @media(max-width: 600px) {
     div.title.h5 {
         position: absolute;
+        top: 30px;
     }
     div.container {
         max-width: 100% !important;
@@ -406,6 +561,21 @@ div.container {
         width: 150px;
         height: 40px;
         left: 120px !important;
+    }
+    .post {
+        height: 100%;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    div.comentarios {
+        margin-top: -30px;
+        margin-left: 4.5%;
+    }
+    div.cominstance {
+        height: 300px;
+    }
+    div.post div.post-description {
+        position: absolute;
+        top: 110px;
     }
 }
 
@@ -427,6 +597,10 @@ div.container {
 
 #ventana {
     height: 80%;
+}
+
+.star:hover {
+    cursor: pointer;
 }
 
 .pelicula {

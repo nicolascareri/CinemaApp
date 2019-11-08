@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FlyerComponent implements OnInit {
   @Input() info;
+  open = false
   
   constructor() {
    
@@ -50,6 +51,14 @@ export class FlyerComponent implements OnInit {
           video.style.display = "none";
     });
 
+  }
+  on() {
+    let div = document.getElementById("comment") as HTMLElement
+      div.style.display = "block";
+  }
+  off(){
+    let div = document.getElementById("comment") as HTMLElement
+    div.style.display = "none";
   }
   public ngOnInit(){
 
