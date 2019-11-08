@@ -19,7 +19,7 @@
             <p>1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.</p>
             <div class="botones">
                 <button id="reproducir" (click)="toggleVideo()" class="reproducir" type="button" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="info">
-                    <img class="playicon" src="assets/play.png" alt="">
+                    <img class="playicon info" src="assets/play.png" alt="">
                     <span id="reproducir">REPRODUCIR</span>
                 </button>
                 <div class="logos" *ngIf="!info">
@@ -29,7 +29,7 @@
                             fill="#EFC23E" />
                     </svg>
                     <span class="texto-logo1">Mi lista</span>
-                    <svg class="logo" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg (click)="on()" class="logo star" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="path-1-inside-1" fill="white">
                             <path
                                 d="M26.414 12.2364C26.9455 11.6958 27.1331 10.9024 26.9039 10.1648C26.6741 9.42728 26.0756 8.90078 25.3403 8.78905L18.8027 7.79756C18.5243 7.75524 18.2837 7.57297 18.1593 7.30944L15.2366 1.12635C14.9084 0.431693 14.2423 0 13.5 0C12.7582 0 12.0921 0.431693 11.764 1.12635L8.84065 7.30944C8.7163 7.57297 8.47517 7.75524 8.19673 7.79756L1.65915 8.78961C0.924405 8.90078 0.325902 9.42728 0.0961241 10.1648C-0.133113 10.9024 0.0544938 11.6958 0.585956 12.2364L5.31613 17.0488C5.51779 17.2542 5.61025 17.5499 5.56267 17.8388L4.44622 24.6347C4.32079 25.3982 4.61544 26.155 5.21611 26.6109C5.81624 27.0674 6.59748 27.1267 7.25545 26.765L13.1021 23.5563C13.3513 23.4198 13.6487 23.4198 13.8979 23.5563L19.7451 26.765C20.0306 26.9219 20.3398 26.9992 20.6474 26.9992C21.047 26.9992 21.4449 26.8688 21.7844 26.6109C22.3851 26.155 22.6798 25.3982 22.5543 24.6347L21.4373 17.8394C21.3898 17.5499 21.4822 17.2547 21.6839 17.0493L26.414 12.2364ZM20.3722 18.0301L21.4887 24.8255C21.5449 25.1674 21.4179 25.4942 21.1486 25.6984C20.8788 25.9022 20.5431 25.927 20.2484 25.7667L14.4013 22.5575C14.1196 22.4035 13.8093 22.3256 13.5 22.3256C13.1907 22.3256 12.881 22.4035 12.5987 22.5581L6.75265 25.7667C6.45691 25.927 6.12116 25.9022 5.85192 25.6984C5.58267 25.4942 5.45616 25.168 5.51185 24.8255L6.6283 18.0301C6.73589 17.3744 6.52773 16.7051 6.07142 16.2413L1.34071 11.4283C1.10228 11.1857 1.02118 10.8437 1.12445 10.5136C1.22717 10.1829 1.48506 9.95603 1.81432 9.90581L8.35136 8.91432C8.9823 8.81896 9.52782 8.40589 9.8095 7.80885L12.7328 1.62576C12.8799 1.31427 13.167 1.12861 13.4995 1.12861C13.8325 1.12861 14.119 1.31427 14.2666 1.62576L17.19 7.80885C17.4716 8.40589 18.0166 8.81896 18.6476 8.91432L25.1851 9.90581C25.5144 9.95603 25.7723 10.1829 25.875 10.5136C25.9777 10.8437 25.8972 11.1857 25.6588 11.4283L20.9286 16.2407C20.4723 16.7051 20.2641 17.3738 20.3722 18.0301Z" />
@@ -64,28 +64,131 @@
         </div>
     </div>
 </div>
-<!-- <div class="container" *ngIf="!info">
-    <div class="row">
-        <div class="col-8">
+<div class="container comentarios" *ngIf="!info">
+    <h2 class="criticas">Criticas</h2>
+    <div class="row cominstance">
+        <div class="col-11">
             <div class="card card-white post">
+                <div class="rate com">
+                    <input type="radio" name="rate1" value="5" checked="checked" />
+                    <label title="text">5 stars</label>
+                    <input type="radio" name="rate2" value="4" />
+                    <label title="text">4 stars</label>
+                    <input type="radio" name="rate3" value="3" />
+                    <label title="text">3 stars</label>
+                    <input type="radio" name="rate4" value="2" />
+                    <label title="text">2 stars</label>
+                    <input type="radio" name="rate5" value="1" />
+                    <label title="text">1 star</label>
+                </div>
                 <div class="post-heading">
                     <div class="float-left image">
                         <img src="/assets/accountimage.jpeg" class="img-circle avatar" alt="user profile image">
                     </div>
                     <div class="float-left meta">
                         <div class="title h5">
-                            <a><b>Nicolas Martín Careri realizó un comentario</b></a>
-                            
+                            <a><b>Nicolas Martín Careri</b></a>
+
                         </div>
                         <h6 class="text-muted time">Hace 10 minutos</h6>
                     </div>
                 </div>
                 <div class="post-description">
-                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione est aut
-                        nam atque, aliquam mollitia, voluptatibus labore reiciendis beatae repudiandae possimus
-                        voluptates ex quidem, ipsam similique dolor incidunt tempore.</p>
+                    <p class="comment">Una de las cosas que más gusta de la serie es su retrato de la clase trabajadora, pues contrario a lo que solemos ver en las pantallas, aquí se refleja que ellos tienen el control de sus propios destinos, como Knight mismo lo explica,
+                        es como si fueran una especie de aristocracia dentro de su propia comunidad. </p>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
+    <div class="row cominstance">
+        <div class="col-11">
+            <div class="card card-white post">
+                <div class="rate com">
+                    <input type="radio" name="rate" value="5" />
+                    <label title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label title="text">4 stars</label>
+                    <input type="radio" checked name="rate" value="3" />
+                    <label title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label title="text">1 star</label>
+                </div>
+                <div class="post-heading">
+                    <div class="float-left image">
+                        <img src="/assets/flyer/peaky.jpg" class="img-circle avatar" alt="user profile image">
+                    </div>
+                    <div class="float-left meta">
+                        <div class="title h5">
+                            <a><b>Juan Bernardo Canneva</b></a>
+
+                        </div>
+                        <h6 class="text-muted time">Hace 2 dias</h6>
+                    </div>
+                </div>
+                <div class="post-description">
+                    <p class="comment">Representa el empoderamiento de la mujer. Es fuerte, visionaria, inteligente y con mucha noción de los negocios y Tommy lo sabe bien. Está rodeada de hombres pero ella representa la fortaleza de la familia, no pueden tomar decisiones
+                        sin antes haberlo consultado con Polly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row cominstance">
+        <div class="col-11">
+            <div class="card card-white post">
+                <div class="rate com">
+                    <input type="radio" name="rate1" value="5" />
+                    <label title="text">5 stars</label>
+                    <input type="radio" name="rate2" value="4" checked="checked" />
+                    <label title="text">4 stars</label>
+                    <input type="radio" name="rate3" value="3" />
+                    <label title="text">3 stars</label>
+                    <input type="radio" name="rate4" value="2" />
+                    <label title="text">2 stars</label>
+                    <input type="radio" name="rate5" value="1" />
+                    <label title="text">1 star</label>
+                </div>
+                <div class="post-heading">
+                    <div class="float-left image">
+                        <img src="/assets/films/hellboy.jpg" class="img-circle avatar" alt="user profile image">
+                    </div>
+                    <div class="float-left meta">
+                        <div class="title h5">
+                            <a><b>Alan Yoel Diaz</b></a>
+
+                        </div>
+                        <h6 class="text-muted time">Hace 3 dias</h6>
+                    </div>
+                </div>
+                <div class="post-description">
+                    <p class="comment">Representa el empoderamiento de la mujer. Es fuerte, visionaria, inteligente y con mucha noción de los negocios y Tommy lo sabe bien. Está rodeada de hombres pero ella representa la fortaleza de la familia, no pueden tomar decisiones
+                        sin antes haberlo consultado con Polly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="comment">
+    <div id="text">
+        <h4 class="text-center">Calificacion:</h4>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+        </div>
+        <div class="opinion">
+            <label for="comentar" class="labelComentar">¡Contanos sobre lo que acabas de ver!</label>
+            <textarea class="comentar" name="" id="" cols="30" rows="4"></textarea>
+            <!-- <input type="text" class="comentar" name="comentar" placeholder="Escribe un comentario..."> -->
+            <button (click)="off()" class="btncomentar">Comentar</button>
+        </div>
+    </div>
+</div>
