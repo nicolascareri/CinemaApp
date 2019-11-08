@@ -214,9 +214,25 @@ ul li {
     height: 150px;
 }
 
+.input-buscar{
+    font-size: 20px;
+    padding-left: 0px;
+}
+
 @media (max-width: 600px) {
     .overlay-content svg {
         right: 0px;
+        width:40px;
+        height: 35px;
+    }
+    .closesearch{
+        right: 10px !important;
+    }
+    .input-buscar{
+        padding-bottom: 4px !important;
+        font-size:20px !important;
+        padding-left: 0px !important;
+        margin-left:22px;
     }
     .filtros {
         width: 400px;
@@ -280,7 +296,7 @@ ul li {
         /* 0.5 second transition effect to slide in the sidenav */
     }
     .logo {
-        margin-left: 25%;
+        margin-left: 28%;
     }
     .logo-out {
         margin: 0 !important;
