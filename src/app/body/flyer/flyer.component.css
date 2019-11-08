@@ -3,6 +3,10 @@
     height: 100%;
 }
 
+.opinion {
+    margin-top: 100px;
+}
+
 div.row {
     margin: 0;
     padding: 0;
@@ -206,7 +210,7 @@ div.rate.com {
 
 .rate {
     position: absolute;
-    top: -7%;
+    top: 5.5%;
     left: 25%;
     float: left;
     height: 46px;
@@ -249,6 +253,23 @@ div.rate.com {
     color: #c59b08;
 }
 
+span.closesearch:hover {
+    color: #c59b08;
+}
+
+span.closesearch {
+    position: absolute;
+    top: 20px;
+    left: 95%;
+    bottom: 0px;
+    text-align: initial;
+    display: block;
+    /* right: 45px; */
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
 #comment {
     position: fixed;
     /* Sit on top of the page content */
@@ -283,10 +304,11 @@ div.rate.com {
 
 h4 {
     position: absolute;
-    top: -30px;
+    top: 42px;
 }
 
 .labelComentar {
+    position: absolute;
     font-size: 20px;
 }
 
@@ -322,8 +344,30 @@ input.comentar {
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 
 @media screen and (max-width: 600px) {
+    span.closesearch {
+        left: 85%;
+    }
+    h4 {
+        width: 100%;
+    }
+    .labelComentar {
+        font-size: 17px;
+    }
+    .btncomentar {
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+        height: 75px;
+    }
+    .opinion {
+        margin-top: 128px;
+    }
+    textarea {
+        width: 315px;
+    }
     .criticas {
         font-size: 20px;
+        margin-bottom: 5px;
     }
     div.rate.com {
         top: 21%;
@@ -331,7 +375,7 @@ input.comentar {
     }
     .rate {
         top: 65px;
-        left: 93px;
+        left: 80px;
     }
     input:checked {
         color: #deb217;
@@ -361,6 +405,13 @@ input.comentar {
     }
     #reproducir {
         left: 27px;
+    }
+    button.reproducir-info.reproducir #reproducir {
+        left: 40px;
+    }
+    button.reproducir-info.reproducir img.playicon {
+        top: 10px;
+        left: 12px;
     }
     button .listicon {
         width: 30px;
@@ -419,10 +470,11 @@ input.comentar {
 
 .cominstance {
     margin-bottom: 50px !important;
+    width: 72%;
 }
 
 .post {
-    height: 169px;
+    height: 175px;
 }
 
 .post .post-heading {
@@ -579,15 +631,17 @@ div.container {
         left: 120px !important;
     }
     .post {
+        width: 104.5%;
         height: 100%;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     }
     div.comentarios {
-        margin-top: -30px;
+        margin-top: -50px;
         margin-left: 4.5%;
     }
     div.cominstance {
         height: 300px;
+        width: 100%;
     }
     div.post div.post-description {
         position: absolute;
