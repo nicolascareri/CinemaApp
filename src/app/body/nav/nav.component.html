@@ -90,7 +90,7 @@
                 <h6 class="dropdown-header">Nicolás Martín Careri</h6>
                 <div class="dropdown-divider divider"></div>
                 <ul class="li-menu">
-                    <li>
+                    <li [routerLink]="['cuenta']">
                         <svg class="notificacion icono-cuenta" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-1" fill="white">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -121,7 +121,7 @@
                         </svg>
                         <a class="dropdown-item" href="#">Notificaciones</a>
                     </li>
-                    <li style="margin-top: 5px;">
+                    <li style="margin-top: 5px;" [routerLink]="['login']">
                         <svg class="icono-sesion" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path
@@ -136,7 +136,7 @@
                                     <rect width="25" height="25" fill="white" transform="translate(0 0.399841)" />
                                 </clipPath>
                             </defs>
-                        </svg>
+                        </svg >
                         <a class="dropdown-item" href="#">Cerrar Sesion</a>
                     </li>
                 </ul>

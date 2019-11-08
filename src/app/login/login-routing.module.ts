@@ -4,13 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { RegistrateComponent } from './registrate/registrate.component';
 import { PlanComponent } from './plan/plan.component';
 import { PagoComponent } from './pago/pago.component';
-import { aLoginComponent } from "./login.component";
+import { aLoginComponent } from  './login.component';
 
 
 const rout: Routes = [
   { path: 'login', component: aLoginComponent, children: [
      {path: '', component: LoginComponent},
-    {path: 'registrate', component:RegistrateComponent},
+    {path: 'registrate', component: RegistrateComponent},
     {path: 'plan', component: PlanComponent},
     {path: 'pago', component: PagoComponent},
     {path: '**', component: RegistrateComponent},
@@ -23,4 +23,4 @@ const rout: Routes = [
   imports: [RouterModule.forChild(rout)],
   exports: [RouterModule]
 })
-export class LoginRoutingModule{}
+export class LoginRoutingModule {}
