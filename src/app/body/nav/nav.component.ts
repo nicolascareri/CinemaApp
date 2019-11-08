@@ -38,7 +38,7 @@ export class NavComponent implements OnInit {
     div.style.display = "none";
   }
 
-  @HostListener('document:wheel', ['$event.target'])
+  @HostListener('document:wheel', [''])
   public onWheel() {
     let nav = document.getElementById("navbar") as HTMLElement;
     if (window.pageYOffset > nav.clientHeight) {
