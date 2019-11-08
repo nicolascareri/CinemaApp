@@ -1,7 +1,7 @@
 <app-nav [logeado]="!logeado"></app-nav>
  <div class="container-fluid top">
       <div class="row d-flex justify-content-center box">
-          <div class="col-10 col-lg-4 d-flex align-content-start">
+          <div class="col-10 col-lg-4 d-flex align-content-start box2">
             <div class="list-group  d-flex align-self-start justify-content-end" id="list-tab" role="tablist">
               <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" [routerLink]="['perfil']" role="tab" aria-controls="home">Mi Cuenta</a>
               <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"  [routerLink]="['configuracion']" role="tab" aria-controls="profile">Configuracion</a>
@@ -9,7 +9,7 @@
               <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"  [routerLink]="['faq']" role="tab" aria-controls="settings">Preguntas frecuentes</a>
             </div>
           </div>
-          <div class="col-12 col-lg-8  top">
+          <div class="col-12 col-lg-8 top">
             <div class="tab-content" id="nav-tabContent">
                 <router-outlet>
                 </router-outlet>
