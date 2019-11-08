@@ -199,6 +199,11 @@ p,
     font-size: 26px;
 }
 
+div.rate.com {
+    top: 12%;
+    left: 79%;
+}
+
 .rate {
     position: absolute;
     top: -7%;
@@ -286,7 +291,8 @@ h4 {
 }
 
 div.comentarios {
-    margin-left: 50px;
+    margin-left: 79px;
+    margin-top: -60px;
 }
 
 textarea {
@@ -318,6 +324,10 @@ input.comentar {
 @media screen and (max-width: 600px) {
     .criticas {
         font-size: 20px;
+    }
+    div.rate.com {
+        top: 21%;
+        left: 27%;
     }
     .rate {
         top: 65px;
@@ -542,6 +552,12 @@ div.container {
 }
 
 @media(max-width: 600px) {
+    .post-heading img.avatar {
+        width: 72px;
+        height: 73px;
+        display: block;
+        margin-right: 3px;
+    }
     div.title.h5 {
         position: absolute;
         top: 30px;
