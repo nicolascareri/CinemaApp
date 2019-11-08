@@ -4,10 +4,6 @@
     opacity: 1;
 }
 
-.cont {
-    /* margin-top: 250px; */
-}
-
 .subtitulo { 
     margin-bottom: 10px;
     font-size: 1.75rem;
@@ -30,5 +26,17 @@
 .breadcumb{
     position: absolute;
     top: 210px;
+}
+
+@media (max-width: 600px) {
+    .cards{
+        margin-top:5px;
+    }
+    .contenedor-cards{
+        top:275px;
+    }
+    .queri{
+        height:275px
+    }
 }
 
