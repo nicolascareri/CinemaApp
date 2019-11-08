@@ -64,7 +64,7 @@
         </div>
     </div>
 </div>
-<div class="container comentarios" *ngIf="!info">
+<div class="comentarios" *ngIf="!info">
     <h2 class="criticas">Criticas</h2>
     <div class="row cominstance">
         <div class="col-11">
@@ -170,6 +170,7 @@
     </div>
 </div>
 <div id="comment">
+    <span class="closesearch" (click)="off()" title="Close Overlay">×</span>
     <div id="text">
         <h4 class="text-center">Calificacion:</h4>
         <div class="rate">
@@ -190,5 +191,6 @@
             <!-- <input type="text" class="comentar" name="comentar" placeholder="Escribe un comentario..."> -->
             <button (click)="off()" class="btncomentar">Comentar</button>
         </div>
+
     </div>
 </div>
