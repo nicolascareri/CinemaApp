@@ -1,34 +1,36 @@
-
-a{
-  font-size: 16px;
-  background: white;
-  color:black;
-}
-a:hover{
-  color: black;
-}
-a:focus, .active{
-  background: #EFC53E;
-  border: 0;
-}
-@media only screen and(max-width:1000px){
-  div.row div div a{
-    font-size: 14px;
-    padding: 0 !important;
-  }
-}
-.box{
-  margin: 2% 0;
-}.box2{
-  margin: 3.5% 0;
-}
-.top{
-  margin: 1% 0;
-}
-#list-tab{
-  width: 100% !important;
+a {
+    font-size: 16px;
+    background: white;
+    color: black;
 }
 
+a:hover {
+    color: black;
+}
 
+a:focus,
+.active {
+    background: #EFC53E;
+    border: 0;
+}
 
+@media only screen and(max-width:1000px) {
+    div.row div div a {
+        font-size: 14px;
+        padding: 0 !important;
+    }
+}
 
+.top {
+    top: 100px;
+    margin-bottom: 80px;
+}
+
+.box2 {
+    top: 150px;
+    z-index: 0;
+}
+
+#list-tab {
+    width: 100% !important;
+}
