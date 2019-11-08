@@ -1,0 +1,9 @@
+*{
+  text-align: justify;
+}
+p, h5{
+  padding: 0 3%;
+}
+h5{
+  margin: 2% 0 1% 0;
+}
